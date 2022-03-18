@@ -4803,22 +4803,16 @@ img{
     padding-top: 200px;
     padding-bottom: 120px;
     overflow: hidden;
-	background: rgb(217,169,230);
-/* background: linear-gradient(40deg, rgba(217,169,230,1) 0%, rgba(182,186,251,1) 11%, rgba(235,218,253,1) 38%, rgba(241,220,248,1) 57%, rgba(248,221,246,1) 76%, rgba(250,226,247,1) 93%, rgba(255,226,250,1) 100%); */
-	background: rgb(217,169,230);
-background: radial-gradient(circle, rgba(217,169,230,1) 0%, rgba(182,186,251,1) 100%);
-/* background: linear-gradient(to bottom, #B721FF, #2AF598, #fec051, #FEE140, #FA709A ); 
-	background-size: 100%;
-	background-repeat: no-repeat; */
-	/* background: linear-gradient(to right bottom, rgba(255,255,255,0.2), #21D4FD 75%); */
+	background: radial-gradient(circle, rgba(217,169,230,1) 0%, rgba(182,186,251,1) 100%);
 
 }
 .btn-another{
 	border-radius:10px;
 	border: 1px solid black;
-	width:100%;
+	width:60%;
 	margin:0 auto;
 	margin-bottom:15px;
+	margin-left:175px;
 	cursor:pointer;
 	box-shadow:0px 0px 40px rgba(0,171,21,0.15);
 	position: relative;
@@ -6153,12 +6147,12 @@ background: radial-gradient(circle, rgba(217,169,230,1) 0%, rgba(182,186,251,1) 
 .login-section{
 	position:relative;
 	padding:180px 0px 120px;
-	background-color:#f0f5fb;
+	background: radial-gradient(circle, rgba(217,169,230,1) 0%, rgba(182,186,251,1) 100%);
 }
 
 .login-section .login-box{
 	position:relative;
-	max-width:570px;
+	max-width:970px;
 	margin:0 auto;
 	padding:45px 40px 35px;
 	background-color:#ffffff;
@@ -6219,7 +6213,7 @@ background: radial-gradient(circle, rgba(217,169,230,1) 0%, rgba(182,186,251,1) 
 .styled-form .form-group input{
 	position:relative;
 	height:50px;
-	padding:6px 30px;
+	padding:3px 30px;
 	width:100%;
 	color:#222222;
 	font-size:16px;

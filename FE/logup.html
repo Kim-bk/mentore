@@ -21,12 +21,74 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-	<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
 </head>
 
-<body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
+<!-- add div -->
+<script>
+	$(document).ready(function() {
+	var wrapper_knlv = $(".kinh-nghiem-lam-viec"); //Fields wrapper
+	
+	
+	$("#add_field").on('click', function(e) { //on add input button click
+		e.preventDefault(); 
+		$(wrapper_knlv).append('<div class="row field-lam-viec"><input class="col-sm-3"type="text" name="username" value="" placeholder="Tên công việc" required=""><input class="col-sm-2"type="text" name="username" value="" placeholder="Chức vụ" required=""><input class="col-sm-3"type="text" name="username" value="" placeholder="Tên công ty" required=""><input class="col-sm-3"type="text" name="username" value="" placeholder="Thời gian công tác" required=""><div class="users col-sm-1 style="padding-top:10px;"><a href="#" class="remove_field" style="color:red; margin-right:40px; ">X</a></div></div>'); //add input box
+		x++; 
+	});
+
+	$(wrapper_knlv).on("click",".remove_field", function(e){ //user click on remove text
+	   e.preventDefault(); 
+	   ($(this).parents('div').eq(1)).remove();  
+   })
+
+   var wrapper_vt = $(".vi-tri"); //Fields wrapper vi-tri
+   $("#add_field_vitri").on('click', function(e) { //on add input button click
+		e.preventDefault(); 
+		$(wrapper_vt).append('<div class="row field-lam-viec"><input class="col-sm-6"type="text" name="username" value="" placeholder="Tên vị trí" required=""><input class="col-sm-5"type="text" name="username" value="" placeholder="Số năm đảm đương vị trí" required=""><div class="users col-sm-1 style="padding-top:10px;"><a href="#" class="remove_field_vitri" style="color:red; margin-right:40px; ">X</a></div></div>'); //add input box
+		x++; 
+	});
+
+	$(wrapper_vt).on("click",".remove_field_vitri", function(e){ //user click on remove text
+	   e.preventDefault(); 
+	   ($(this).parents('div').eq(1)).remove();  
+   })
+	
+});
+</script>
+
+<body>
+	<style>
+	
+		.styled-form .form-group select {
+			position: relative;
+			height: 50px;
+			padding: 6px 30px;
+			/* width: 100%; */
+			color: #222222;
+			font-size: 16px;
+			border-radius: 0px;
+			transition: all 500ms ease;
+			-moz-transition: all 500ms ease;
+			-webkit-transition: all 500ms ease;
+			-ms-transition: all 500ms ease;
+			-o-transition: all 500ms ease;
+			box-shadow: 0px 0px 18px rgb(0 0 0 / 10%);
+			}
+			
+			.field-lam-viec{
+				padding-top: 18px;
+			}
+			.row{
+				margin-right: -80px;
+     			margin-left: 0px;
+			}
+
+			.styled-form .form-group .check-box label {
+				max-width:90%;
+			}
+	</style>
 	<div class="page-wrapper">
 
 		<!-- Preloader -->
@@ -53,22 +115,151 @@
 					<!-- Login Form -->
 					<div class="styled-form">
 						<form method="post" action="index.html">
+							<h4 style="font-weight:bold">Thông tin cá nhân</h4>
+						</br>
 							<div class="form-group">
-								<label>Email</label>
-								<input type="text" name="username" value="" placeholder="Email" required="">
+								<label>*Họ và tên</label>
+								<input type="text" name="username" value="" placeholder="" required="">
 							</div>
 							<div class="form-group">
-								<label>Mật khẩu</label>
-								<span class="eye-icon flaticon-eye"></span>
-								<input type="password" name="password" value="" placeholder="Mật khẩu" required="">
+								<label>*Email</label>
+								<input type="text" name="username" value="" placeholder="" required="">
+							</div>
+							<div class="form-group">
+								<label>*Số điện thoại</label>
+								<input type="text" name="username" value="" placeholder="" required="">
+							</div>
+							<div class="form-group">
+								<label>*Công việc hiện tại</label>
+								<div>
+									<select name="job" id="job">
+										<option>Chọn công việc</option>
+										<option>Nhân viên</option>
+										<option>Freelancer</option>
+										<option>Khác</option>
+									  </select>
+								</div>
+							
+							</div>
+							<div class="form-group kinh-nghiem-lam-viec">
+								<label>*Kinh nghiệm làm việc (Tên công việc, Chức vụ, Tên công ty, Thời gian công tác)</label>
+							
+								<div class="father">
+									<div class="row">
+										<input class="col-sm-3"type="text" name="username" value="" placeholder="Tên công việc" required="">
+										<input class="col-sm-2"type="text" name="username" value="" placeholder="Chức vụ" required="">
+										<input class="col-sm-3"type="text" name="username" value="" placeholder="Tên công ty" required="">	
+										<input class="col-sm-3"type="text" name="username" value="" placeholder="Thời gian công tác" required="">	
+									</div>
+								<!-- </br>
+						</br>
+									<input type="text" name="username" value="" placeholder="Tên công việc, Chức vụ, Tên công ty, Thời gian công tác" required="">	 -->
+									<div class="users" style="padding-top:10px;"><a href="#" id="add_field">Thêm</a></div>
+								
+								</div>
+							
+								
+							</div>
+							<div class="form-group">
+								<label>*Thành tích học thuật</label>
+								<input type="text" name="username" value="" placeholder="" required="">
+							</div>
+							<div class="form-group">
+								<label>*Các kỹ năng</label>
+								<input type="text" name="username" value="" placeholder="Kỹ năng 1, Kỹ năng 2, ..." required="">
 							</div>
 
+							<h4 style="font-weight:bold">Thông tin thêm</h4>
+							</br>
 							<div class="form-group">
+								<label>*Lĩnh vực bạn muốn đăng ký làm Mentor?</label>
+								<div>
+									<select name="job" id="job">
+										<option>Chọn 1 lĩnh vực</option>
+										<option>IT</option>
+										<option>Giáo dục</option>
+										<option>Marketing</option>
+										<option>Khác</option>
+									  </select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label>*Tên (vị trí) công việc bạn muốn làm Mentor?</label>
+								<input type="text" name="username" value="" placeholder="Vị trí 1, Vị trí 2, ..." required="">
+							</div>
+							<div class="form-group vi-tri">
+								<label>*Với mỗi vị trí, số năm trong nghề của bạn là bao lâu?</label>
+								<div class="father">
+									<div class="row">
+										<input class="col-sm-6"type="text" name="username" value="" placeholder="Tên vị trí" required="">
+										<input class="col-sm-5"type="text" name="username" value="" placeholder="Số năm đảm đương vị trí" required="">	
+									</div>
+									<div class="users" style="padding-top:10px;"><a href="#" id="add_field_vitri">Thêm</a></div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label>*Bạn lựa chọn hình thức Mentor nào? (Có thể chọn nhiều hơn 1 hình thức)</label>
 								<div class="clearfix">
 									<div class="pull-left">
 										<div class="check-box">
-											<input type="checkbox" name="remember-password" id="type-1">
-											<label for="type-1">Tôi muốn nhận thông tin và cập nhật từ Mentores!</label>
+											<div class="row justify-content-md-center">
+												<div class="col col-lg-4">
+													<input type="checkbox" name="remember-password" id="type-1">
+													<label for="type-1">Workshop</label>		
+												</div>
+												<div class="col col-lg-4">
+													<input type="checkbox" name="remember-password" id="type-2">
+													<label for="type-2">Quan sát thực tế</label>		
+												</div>
+												<div class="col col-lg-4">
+													<input type="checkbox" name="remember-password" id="type-3">
+													<label for="type-3">Buổi thực hành</label>		
+												</div>
+												<div class="col col-lg-4">
+													<input type="checkbox" name="remember-password" id="type-4">
+													<label for="type-4">Video ‘mục sở thị’</label>		
+												</div>
+												<div class="col col-lg-4">
+													<input type="checkbox" name="remember-password" id="type-5">
+													<label for="type-5">Bài viết</label>		
+												</div>
+												<div class="col col-lg-4">
+													<input type="checkbox" name="remember-password" id="type-6">
+													<label for="type-6">Podcast</label>		
+												</div>
+											</div>
+										
+										</div>
+									</div>
+								</div>
+									
+							 
+										
+							</div>
+							<h4 style="font-weight:bold">Thông tin thanh toán</h4>
+							</br>
+							<div class="form-group">
+								<label>*Tài khoản ngân hàng</label>
+								<input type="text" name="username" value="" placeholder="options" required="">
+							</div>
+							<div class="form-group">
+								<label>*Ví điện tử</label>
+								<input type="text" name="username" value="" placeholder="options" required="">
+							</div>
+							
+						
+							<!-- <div class="form-group">
+								<label>Mật khẩu</label>
+								<span class="eye-icon flaticon-eye"></span>
+								<input type="password" name="password" value="" placeholder="Mật khẩu" required="">
+							</div> -->
+
+							<div class="form-group" style="padding-left:27%">
+								<div class="clearfix">
+									<div class="pull-left">
+										<div class="check-box">
+											<input type="checkbox" name="remember-password" id="type-0">
+											<label for="type-0" style="max-width:100%">Tôi muốn nhận thông tin và cập nhật từ Mentoré!</label>
 										</div>
 									</div>
 									<!-- <div class="pull-right">
@@ -83,7 +274,7 @@
 											class="fa fa-angle-right"></i></span></button>
 							</div>
                             <hr style="height:1px;border:none;color:#333;background-color:#333;"/>
-                            <span class="txt" style="padding-left:45%; font-size: 16px; font-weight: bold;">hoặc</span>
+                            <span class="txt" style="padding-left:47%; font-size: 16px; font-weight: bold;">hoặc</span>
                             <div class="another-choices" style="margin-top:10px;">
                                 <button type="button" class="btn-another">
                                     <img src="./images/icons/google.png" height="40px" width="40px" style="text-align:left">
