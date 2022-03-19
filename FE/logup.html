@@ -4,7 +4,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Đăng ký | Mentores</title>
+	<title>Đăng ký cho Mentor | Mentoré</title>
 	<!-- Stylesheets -->
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
@@ -76,6 +76,20 @@
 			-o-transition: all 500ms ease;
 			box-shadow: 0px 0px 18px rgb(0 0 0 / 10%);
 			}
+
+
+			
+			.styled-form .form-group .banking img:hover {
+				padding: 0px;
+  				border: 5px solid rgb(249, 193, 253);
+				
+			}
+
+
+			.styled-form .form-group img {
+				width:120px;
+				max-height:90px;
+			}
 			
 			.field-lam-viec{
 				padding-top: 18px;
@@ -87,6 +101,9 @@
 
 			.styled-form .form-group .check-box label {
 				max-width:90%;
+			}
+			.vi-dien-tu{
+				max-height: 70px;
 			}
 	</style>
 	<div class="page-wrapper">
@@ -240,11 +257,46 @@
 							</br>
 							<div class="form-group">
 								<label>*Tài khoản ngân hàng</label>
-								<input type="text" name="username" value="" placeholder="options" required="">
+								<!-- <input type="text" name="username" value="" placeholder="options" required=""> -->
+								<div class="row justify-content-md-center">
+									<div class="col col-lg-4 banking">
+										<img class="vi-dien-tu" src="./images/banking/bidv.png"/>										
+									</div>
+									<div class="col col-lg-4 banking">
+										<img class="vi-dien-tu" src="./images/banking/vietcom.png"/>			
+									</div>
+									<div class="col col-lg-4 banking">
+										<img class="vi-dien-tu" src="./images/banking/vpbank.png"/>	
+									</div>
+									<div class="col col-lg-4 banking">
+										<img class="vi-dien-tu" src="./images/banking/agribank.png"/>			
+									</div>
+									<div class="col col-lg-4 banking">
+										<img class="vi-dien-tu" src="./images/banking/acb.png"/>			
+									</div>
+									<div class="col col-lg-4 banking">
+										<img class="vi-dien-tu" src="./images/banking/viettin.png"/>			
+									</div>
+								</div>
 							</div>
+							<br/>
+							<br/>
 							<div class="form-group">
 								<label>*Ví điện tử</label>
-								<input type="text" name="username" value="" placeholder="options" required="">
+								<div class="row justify-content-md-center">
+									<div class="col col-lg-3 banking" >
+										<img src="./images/banking/momo.png"/>										
+									</div>
+									<div class="col col-lg-3 banking" >
+										<img src="./images/banking/vnpay.png"/>			
+									</div>
+									<div class="col col-lg-3 banking" >
+										<img src="./images/banking/airpay.png"/>			
+									</div>
+									<div class="col col-lg-3 banking" >
+										<img src="./images/banking/zalo.png"/>			
+									</div>
+								</div>
 							</div>
 							
 						
