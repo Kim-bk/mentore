@@ -30,7 +30,7 @@
 <script>
 	$(document).ready(function() {
 	var wrapper_knlv = $(".kinh-nghiem-lam-viec"); //Fields wrapper
-	
+	x = 0;
 	
 	$("#add_field").on('click', function(e) { //on add input button click
 		e.preventDefault(); 
@@ -56,6 +56,8 @@
    })
 	
 });
+
+
 </script>
 
 <body>
@@ -79,10 +81,10 @@
 
 
 			
-			.styled-form .form-group .banking img:hover {
-				padding: 0px;
-  				border: 5px solid rgb(249, 193, 253);
-				
+			 img:hover {
+  				/* border: 5px solid rgb(255, 222, 160); */
+				padding:5px; 
+				 transition:0.25s; 
 			}
 
 
@@ -104,6 +106,7 @@
 			}
 			.vi-dien-tu{
 				max-height: 70px;
+				margin-left:15px;
 			}
 	</style>
 	<div class="page-wrapper">
@@ -258,8 +261,16 @@
 							<div class="form-group">
 								<label>*Tài khoản ngân hàng</label>
 								<!-- <input type="text" name="username" value="" placeholder="options" required=""> -->
-								<div class="row justify-content-md-center">
-									<div class="col col-lg-4 banking">
+								<div>
+									<img class="vi-dien-tu" src="./images/banking/bidv.png"/>		
+									<img class="vi-dien-tu" src="./images/banking/vietcom.png"/>	
+									<img class="vi-dien-tu" src="./images/banking/vpbank.png"/>	
+									<img class="vi-dien-tu" src="./images/banking/agribank.png"/>
+									<img class="vi-dien-tu" src="./images/banking/acb.png"/>	
+									<img class="vi-dien-tu" src="./images/banking/viettin.png"/>		
+								</div>
+								<!-- <div class="row justify-content-md-center">
+									<div class="col col-lg-4 banking ">
 										<img class="vi-dien-tu" src="./images/banking/bidv.png"/>										
 									</div>
 									<div class="col col-lg-4 banking">
@@ -277,26 +288,33 @@
 									<div class="col col-lg-4 banking">
 										<img class="vi-dien-tu" src="./images/banking/viettin.png"/>			
 									</div>
-								</div>
+								</div> -->
 							</div>
 							<br/>
 							<br/>
 							<div class="form-group">
 								<label>*Ví điện tử</label>
-								<div class="row justify-content-md-center">
-									<div class="col col-lg-3 banking" >
-										<img src="./images/banking/momo.png"/>										
-									</div>
-									<div class="col col-lg-3 banking" >
-										<img src="./images/banking/vnpay.png"/>			
-									</div>
-									<div class="col col-lg-3 banking" >
-										<img src="./images/banking/airpay.png"/>			
-									</div>
-									<div class="col col-lg-3 banking" >
-										<img src="./images/banking/zalo.png"/>			
-									</div>
+								<div style="position:relavtive">
+										<img class="vi-dien-tu" src="./images/banking/momo.png"/>	
+										<img class="vi-dien-tu"  src="./images/banking/vnpay.png"/>
+										<img class="vi-dien-tu" src="./images/banking/airpay.png"/>				
+										<img class="vi-dien-tu" src="./images/banking/zalo.png"/>	
 								</div>
+								<!-- <div class="row justify-content-md-center">
+									<div class="col col-lg-3 banking">
+										<img class="vi-dien-tu" src="./images/banking/momo.png"/>	
+																	
+									</div>
+									<div class="col col-lg-3 banking" >
+										<img class="vi-dien-tu"  src="./images/banking/vnpay.png"/>			
+									</div>
+									<div class="col col-lg-3 banking" >
+										<img class="vi-dien-tu" src="./images/banking/airpay.png"/>			
+									</div>
+									<div class="col col-lg-3 banking" >
+										<img class="vi-dien-tu" src="./images/banking/zalo.png"/>			
+									</div>
+								</div> -->
 							</div>
 							
 						
@@ -372,6 +390,14 @@
 	<!--Scroll to top-->
 	<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-up"></span></div>
 
+	<script>
+			click_times = 0;
+			$('.vi-dien-tu').click(function() {
+				$(this).parent().find('.vi-dien-tu').css('border', 'none');
+				$(this).css('border', ' 5px solid #4caf50');
+			});
+
+	</script>
 	<script src="js/jquery.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/jquery.scrollTo.js"></script>
