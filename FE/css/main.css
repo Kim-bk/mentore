@@ -355,7 +355,7 @@ img{
 	overflow: hidden;
 	background: none;
 	border-radius:50px;
-	background-color:#c4b3f2;
+	background-color:#6a45c9;
 	text-transform: capitalize;
 	font-family: 'Poppins', sans-serif;
 	-webkit-box-shadow: 0 10px 30px rgba(0,171,21,0.10);
@@ -413,6 +413,16 @@ img{
 }
 
 /* Btn Style Four */
+
+.or{
+	top:-29px;
+	right:-410px ;
+	position: inherit;
+	 background: white; 
+	 width:7%; 
+	 padding-right:40px;
+	 
+}
 
 .btn-style-four{
 	position: relative;
@@ -6147,7 +6157,8 @@ img{
 .login-section{
 	position:relative;
 	padding:180px 0px 120px;
-	background: radial-gradient(circle, rgba(217,169,230,1) 0%, rgba(182,186,251,1) 100%);
+	background: rgb(113,63,193);
+	background: linear-gradient(0deg, rgba(113,63,193,1) 0%, rgba(112,67,207,1) 3%, rgba(103,71,198,1) 15%, rgba(131,71,203,1) 27%, rgba(166,88,212,1) 44%, rgba(188,96,221,1) 58%, rgba(217,110,212,1) 80%, rgba(228,120,203,1) 94%);
 }
 
 .login-section .login-box{
