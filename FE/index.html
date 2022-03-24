@@ -23,6 +23,79 @@
 	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 	<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 </head>
+<style>
+	 .content-column .inner-column h1{
+		color: rgb(113,63,193);
+		color: linear-gradient(0deg, rgba(113,63,193,1) 0%, rgba(112,67,207,1) 3%, rgba(103,71,198,1) 15%, rgba(131,71,203,1) 27%, rgba(166,88,212,1) 44%, rgba(188,96,221,1) 58%, rgba(217,110,212,1) 80%, rgba(228,120,203,1) 94%);
+	}
+
+	.slider-section-two .content-column .text {
+    	color: #ffffff;
+	}
+
+	.content-column .inner-column .text{
+		color: rgb(113,63,193);
+	}
+	.column{
+		margin: 10px;
+		cursor: pointer;
+		border: 1px solid;
+		width:220px;
+		height:300px;
+		/* display:flex; */
+		position: relative;
+		background:white;
+		border-radius: 10px;
+		border:1px solid rgba(129,162,178,.25);
+		margin-top:5%;
+	
+	
+	}
+	.column:hover{
+		
+		/* box-shadow: 0 30px 60px -30px rgb(0 0 0 / 70%), 0 50px 100px -20px rgb(40 50 90 / 25%);
+		text-decoration: none!important;
+		padding-bottom: 10px; */
+		position: relative; 
+        top: -15px;
+		transition:0.5s;
+	}
+	.row{
+		justify-content:center;
+	}
+	.section2{
+		background-color: rgb(113,63,193);
+		background-color: linear-gradient(0deg, rgba(113,63,193,1) 0%, rgba(112,67,207,1) 3%, rgba(103,71,198,1) 15%, rgba(131,71,203,1) 27%, rgba(166,88,212,1) 44%, rgba(188,96,221,1) 58%, rgba(217,110,212,1) 80%, rgba(228,120,203,1) 94%);
+		height:450px;
+	}
+	.row .column img{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width:118px;
+		height:130px;
+	}
+	.row .column p{
+		font-family: 'Quicksand', sans-serif;
+	}
+	.content-word{
+		text-align:center;
+		background-color: rgb(113,63,193);
+		background-color: linear-gradient(0deg, rgba(113,63,193,1) 0%, rgba(112,67,207,1) 3%, rgba(103,71,198,1) 15%, rgba(131,71,203,1) 27%, rgba(166,88,212,1) 44%, rgba(188,96,221,1) 58%, rgba(217,110,212,1) 80%, rgba(228,120,203,1) 94%);
+	}
+	.content-word h3{
+		color:white;
+		font-family: 'Quicksand', sans-serif;
+		font-size:25px;
+		font-weight:bold;
+	}
+	.section2 h3{
+		color:white;
+		font-family: 'Quicksand', sans-serif;
+		font-size:25px;
+		font-weight:bold;
+	}
+</style>
 
 <body>
 
@@ -35,14 +108,21 @@
 		<header class="main-header header-style-one">
 
 			<!-- Header Top -->
-			<div class="header-top">
+			<!-- <div class="header-top">
+				<div class="pull-left logo-box">
+					<div class="logo">
+						<label style="font-weight:bold;font-size:32px; color:rgb(187 77 206 / 81%); padding-top:15px; padding-left:20px">
+							Mentoré
+						</label>
+					</div>
+				
+				</div>
 				<div class="auto-container">
 					<div class="clearfix">
 
-						<!-- Top Left -->
 						<div class="top-left pull-left clearfix">
+							
 
-							<!-- Info List -->
 							<ul class="info-list">
 								<li><span>Call Us:</span><a href="tel:+123-456-7890"> </a></li>
 								<li><span>Email Us:</span><a href="mailto:info@yourcompany.com">
@@ -51,9 +131,7 @@
 
 						</div>
 
-						<!-- Top Right -->
 						<div class="top-right pull-right clearfix">
-							<!-- Login Nav -->
 							<ul class="login-nav">
 								<li><a href="login.html"></a></li>
 								<li><a href="login.html">Đăng nhập</a></li>
@@ -62,64 +140,97 @@
 
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<!-- Header Upper -->
 			<div class="header-upper">
+				
 				<div class="auto-container">
 					<div class="clearfix">
 
 						<div class="pull-left logo-box">
-							<div class="logo"><a href="index.html"><img src="images/logo.png" alt=""
-										title="Bootcamp"></a></div>
+							<div class="nav-outer clearfix">
+								<!--Mobile Navigation Toggler-->
+								<div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
+								<!-- Main Menu -->
+								<nav class="main-menu show navbar-expand-md">
+									<div class="navbar-header">
+										<button class="navbar-toggler" type="button" data-toggle="collapse"
+											data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+											aria-expanded="false" aria-label="Toggle navigation">
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+	
+									<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+											
+												
+										
+										<ul class="navigation clearfix">
+											<li>
+												<label style="font-weight:bold;font-size:32px; color:black; padding:0px 0px 35px 0px;">
+													Mentoré
+												</label>
+											</li>
+											<li class="dropdown"><a href="#">Trang chủ</a>
+												<ul>
+	
+												</ul>
+											</li>
+	
+											<li class="dropdown"><a href="#">Tìm kiếm Mentor</a>
+												<!-- <ul>
+													<li><a href="course.html">Toán</a></li>
+													<li><a href="course.html">Tiếng Việt</a></li>
+													<li><a href="course.html">Ngoại ngữ</a></li>
+													<li><a href="course.html">Âm nhạc</a></li>
+													<li><a href="course.html">Mỹ thuật</a></li>
+													<li><a href="course.html">Tin học</a></li>
+												</ul> -->
+											</li>
+											<li class="dropdown"><a href="#">Bản tin</a>
+													<!-- <ul>
+														<li><a href="#">Đọc Sách</a></li>
+	
+													</ul> -->
+											</li>
+											<li class="dropdown"> 
+												<a href="#">Nhiều hơn</a>
+											</li>
+										</ul>
+									</div>
+	
+								</nav>
+	
+							</div>
+						</div>
+						
+						<div class="pull-right logo-box">
+								<!--Mobile Navigation Toggler-->
+	
+								<!-- Main Menu -->
+								<nav class="main-menu show navbar-expand-md">
+									<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+										<ul class="navigation clearfix login-nav">
+											<li class="dropdown"> 
+												<a href="#">Trang của tôi</a>
+											</li>
+										
+												<li><a href="login.html"></a></li>
+												<li><a href="login.html">Đăng nhập</a></li>
+											
+	
+										</ul>
+										<!-- Login Nav -->
+
+									</div>
+								</nav>
+									
 						</div>
 
-						<div class="nav-outer clearfix">
-							<!--Mobile Navigation Toggler-->
-							<div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
-							<!-- Main Menu -->
-							<nav class="main-menu show navbar-expand-md">
-								<div class="navbar-header">
-									<button class="navbar-toggler" type="button" data-toggle="collapse"
-										data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-										aria-expanded="false" aria-label="Toggle navigation">
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									</button>
-								</div>
-
-								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
-									<ul class="navigation clearfix">
-										<li class="dropdown"><a href="#">Trang chủ</a>
-											<ul>
-
-											</ul>
-										</li>
-
-										<li class="dropdown"><a href="#">Học Tập</a>
-											<ul>
-												<li><a href="course.html">Toán</a></li>
-												<li><a href="course.html">Tiếng Việt</a></li>
-												<li><a href="course.html">Ngoại ngữ</a></li>
-												<li><a href="course.html">Âm nhạc</a></li>
-												<li><a href="course.html">Mỹ thuật</a></li>
-												<li><a href="course.html">Tin học</a></li>
-											</ul>
-										</li>
-										<li class="dropdown"><a href="#">Khám phá</a>
-											<ul>
-												<li><a href="#">Đọc Sách</a></li>
-
-											</ul>
-										</li>
-
-									</ul>
-								</div>
-
-							</nav>
-
-						</div>
+					
 
 					</div>
 				</div>
@@ -156,14 +267,13 @@
 							<!-- Content Column -->
 							<div class="content-column col-lg-6 col-md-12 col-sm-12">
 								<div class="inner-column">
-									<h1>Mọi cố gắng đều được đền đáp</h1>
-									<div class="text">Mọi cố gắng đều được đền đáp . Mọi cố gắng đều được đền đáp .
-										Mọi cố gắng đều được đền đáp</div>
+									<h1>Đến Mentoré,</h1>
+									<h1>tìm kiếm Mentor đồng hành cùng bạn</h1>
+									<div class="text">Mentoré khát khao được đồng hành cùng bạn trẻ Việt trong hành trình tìm ra ngành học và công việc trong mơ phù hợp với bạn</div>
 									<div class="btns-box">
 										<a href="#" class="theme-btn btn-style-four"><span class="txt">
-												Bắt đầu học ngay</span></a>
-										<a href="#" class="theme-btn btn-style-five"><span class="txt">
-												Tất cả khóa học</span></a>
+												Tìm hiểu thêm</span></a>
+									
 									</div>
 								</div>
 							</div>
@@ -172,7 +282,7 @@
 							<div class="image-column col-lg-6 col-md-12 col-sm-12">
 								<div class="inner-column">
 									<div class="image">
-										<img src="images/mentor.png" alt="">
+										<img src="images/main-slider/get-started.png" style="height:600px; min-width:800px;" alt="">
 									</div>
 								</div>
 							</div>
@@ -181,14 +291,14 @@
 					</div>
 				</div>
 
-				<div class="slide">
+			<!-- <div class="slide">
 					<div class="auto-container">
 						<div class="row clearfix">
 
-							<!-- Content Column -->
+							
 							<div class="content-column col-lg-6 col-md-12 col-sm-12">
 								<div class="inner-column">
-									<h1>Mọi cố gắng đều được đền đáp</h1>
+									<h1></h1>
 									<div class="text">Mọi cố gắng đều được đền đáp. Mọi cố gắng đều được đền đáp .
 										Mọi cố gắng đều được đền đáp</div>
 									<div class="btns-box">
@@ -200,8 +310,8 @@
 								</div>
 							</div>
 
-							<!-- Image Column -->
-							<div class="image-column col-lg-6 col-md-12 col-sm-12">
+							
+							<div class="imag	e-column col-lg-6 col-md-12 col-sm-12">
 								<div class="inner-column">
 									<div class="image">
 										<img src="images/main-slider/content-image-2.png" alt="">
@@ -211,14 +321,44 @@
 
 						</div>
 					</div>
-				</div>
+				</div> -->
 
 			
 
 			</div>
 		</section>
-
-
+		<hr/>
+	
+		<div class="row section2">
+				<h3 style="position:absolute;">Bạn có đang ...</h3>
+			<br/>
+			<div class="column">
+				<img src="./images/page2_1.png">
+			  <p style="font-weight:bold; text-align: center; font-size:18px;">Mông lung</p>
+			  <p style="text-align:center;">trong việc lựa chọn ngành học sẽ theo đuổi trong tương lai?</p>
+			</div>
+			<div class="column">
+				<img src="./images/page2_2.png">
+			  <p style="font-weight:bold; text-align: center; font-size:18px;">Muốn nhảy việc</p>
+			  <p  style="text-align:center;">nhưng chưa đủ sự tự tin am hiểu với vị trí công việc ở lĩnh vực mới sợ rủi ro?</p>
+			</div>
+			<div class="column">
+				<img src="./images/page2_3.png">
+			  <p style="font-weight:bold; text-align: center; font-size:18px;">Muốn học nghề thợ</p>
+			  <p  style="text-align:center;">nhưng chưa có hình dung cụ thể về phạm vi nghiệp vụ của công việc?</p>
+			</div>
+			<div class="column">
+				<img src="./images/page2_4.png">
+				<p style="font-weight:bold; text-align: center; font-size:18px;">Hứng thú</p>
+				<p  style="text-align:center;">với một lĩnh vực, vị trí công việc nhưng chưa dám thử vì e ngại không phù hợp?</p>
+			</div>
+			
+		  </div>
+		  <div class="content-word">
+			<h3>Khó khăn của bạn, đã có Mentoré lo!</h3>
+		  </div>
+		  
+		 
 
 	</div>
 	<!--End pagewrapper-->
