@@ -949,7 +949,7 @@ img{
 
 .scroll-to-top:hover{
 	color:#ffffff;
-	background:#00ab15;
+	background:#9c1cc6;
 }
 
 /*** 
@@ -1184,10 +1184,11 @@ img{
 }
 
 .main-header .header-upper{
+	padding-top: 10px;
 	position:relative;
 	z-index:1;
-	background-image: url("https://lh4.googleusercontent.com/jCfElurv1rUlsd8rSqEjO7uSk4kesbzeDKexifw7RhupnDEej1bfhfk3svzfejHNTjkptqEPnAGkJ6bD072z=w1920-h902");
-	height:60px;
+	background-image: url(../images/bg-title.png);
+	height:90.47px;
 	padding:auto;
 }
 
@@ -1781,11 +1782,12 @@ img{
 }
 
 .main-header.fixed-header .header-upper{
+	padding-top:20px;
 	position: fixed;
 	left:0px;
 	right:0px;
 	top:0px;
-	padding:0px;
+
 	background-color: rgb(113,63,193);
 	background-color: linear-gradient(0deg, rgba(113,63,193,1) 0%, rgba(112,67,207,1) 3%, rgba(103,71,198,1) 15%, rgba(131,71,203,1) 27%, rgba(166,88,212,1) 44%, rgba(188,96,221,1) 58%, rgba(217,110,212,1) 80%, rgba(228,120,203,1) 94%);
 	box-shadow:0px 0px 15px rgba(0,0,0,0.12);
