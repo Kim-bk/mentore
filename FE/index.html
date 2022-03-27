@@ -78,8 +78,6 @@
 		border-radius: 40px 0px 40px 0px;
 		background-image: url('./images/bg-img2.png');
 		/* Full height */
-		/* height: 100%; */
-
 		/* Center and scale the image nicely */
 		background-position: center;
 		background-repeat: no-repeat;
@@ -91,17 +89,9 @@
 	}
 	.section4 .column{
 		margin: 10px;
-		/* cursor: pointer; */
-		/* border: 1px solid; */
 		width:300px;
-		/* height:520px; */
-		/* display:flex; */
 		position: relative;
-		/* border-radius: 40px 0px 40px 0px; */
-		/* background-color: rgb(113,63,193);
-		background-color: linear-gradient(0deg, rgba(113,63,193,1) 0%,rgba(188,96,221,1) 58%, rgba(217,110,212,1) 80%, rgba(228,120,203,1) 94%); */
 		color:white;
-		/* border:1px solid rgba(129,162,178,.25); */
 		margin-top:7%;
 		transition:0.5s;
 	}
@@ -119,10 +109,8 @@
 		justify-content:center;
 	}
 	.section2{
-	
 		/* background-color: rgb(113,63,193);
 		background-color: linear-gradient(0deg, rgba(113,63,193,1) 0%, rgba(112,67,207,1) 3%, rgba(103,71,198,1) 15%, rgba(131,71,203,1) 27%, rgba(166,88,212,1) 44%, rgba(188,96,221,1) 58%, rgba(217,110,212,1) 80%, rgba(228,120,203,1) 94%); */
-
 		background-image: url('./images/bg-img2.png');
 		/* Full height */
 		height: 100%;
@@ -143,17 +131,95 @@
 	.section4{
 		margin-top:200px;
 		background-image: url('./images/bg-img2.png');
-		
-
 		/* Full height */
 		height: 100%;
-
 		/* Center and scale the image nicely */
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		/* height:450px; */
 	}
+
+	.section6{ 
+		margin-top:300px;
+		text-align:center;
+	}
+
+	.section6 .btns-box a{
+		border-radius: 50px;
+	}
+
+	.btn-style-four
+	{
+		background-image: url('./images/bg-img2.png');	
+		height: 100%;
+		/* Center and scale the image nicely */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		transition: all 500ms ease;
+	}
+	.btn-style-four:hover {
+		
+		color:black;
+	}
+
+	.section6 .btns-box .btn-style-four:hover
+	{ 
+		position: relative;
+		top:-3px;	
+		color: white;
+	}
+	
+
+	.section6 .btns-box  .btn-style-four:before{
+		background-image: url('./images/bg-img2.png');	
+		height: 100%;
+		/* Center and scale the image nicely */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		transition: all 1s ease; 
+}
+
+
+.section7{
+	margin-top:80px;
+	background-color:#ded6d6;
+}
+.section7 .row{
+	padding-top:35px;
+	padding-bottom:35px;
+	justify-content:center;
+	height:500px;
+}
+
+
+.section7 .row .col-sm-5{
+		flex: 0 0 47.666667%;
+		max-width: 47.666667%;
+		cursor:pointer;
+		height:100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		transition: all 1s ease; 
+		text-align: center;
+}
+
+.section7 .row .col-sm-5 p{
+		padding-top:180px;
+		color:white;
+		font-weight:bold;
+		font-size:28px;
+		font-family: 'Quicksand', sans-serif;
+}
+
+
+
+.section7 .row .col-sm-5:hover{
+	transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 	.section4 .row{
 		z-index: 9999;
 	}
@@ -225,22 +291,22 @@
 .main-list{
 	background-image: url('./images/blur-img.png');
 	height: 620px;
-	margin-top:15px;
+	margin-top:150px;
 	/* Center and scale the image nicely */
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	justify-content:center;
-	padding-top:150px;
+	padding-top:50px;
 	color:rgb(255, 255, 255);
 	font-family: 'Quicksand', sans-serif;
-	font-size:32px;
+	font-weight: bold;
 }
 .main-list .content-right{
-	font-size:32px;
-	padding-left:335px;
+	padding-left:225px;
 	float:left;
-	width:60%
+	width:60%;
+	font-size:40px;
 	
 }
 .main-list .content-left{
@@ -251,12 +317,14 @@
 	padding-left:-20px;
 }
 
-.content-left li {
+.content-left li{
 	width:fit-content;
-      display:block;
-      padding-bottom: 5px;
-      cursor: pointer;
+    display:block;
+    margin-bottom: 10px;
+	padding-bottom:10px;
+    cursor: pointer;
 	position: relative;
+	font-size:32px;
 }
 
 .content-left li:after {
@@ -552,9 +620,8 @@
 	
 	
 		<!-- section 4 -->
-		<div>
 		<div class="section4"data-aos="fade-up"
-		data-aos-duration="3000">
+		data-aos-duration="2000">
 		<div class="row" >
 				<div style="text-align:center">
 					<h3 style="position:absolute; padding-left:155px; padding-top:10px;">MENTORÉ CUNG CẤP ĐA DẠNG SẢN PHẨM, DỊCH VỤ HƯỚNG NGHIỆP ĐẾN <br> THẾ HỆ TRẺ VIỆT NAM</h3>
@@ -611,18 +678,10 @@
 		  <p style="font-weight:bold; text-align: center; font-size:25px;">50+ lĩnh vực</p>
 	</div>
 	  </div>
-
-
-
-	  
-
-
-
 	</div>
 
-	<!-- section 4- 3 -->
-	<div class="main-list" data-aos="fade-up"
-		data-aos-anchor-placement="top-bottom">
+	<!-- section 5 -->
+	<div class="main-list" data-aos="fade-left">
 			<div class="content-right">
 				<p>Chọn lĩnh vực bạn <br> quan tâm để tìm kiếm Mentor.</p>
 			</div>
@@ -642,15 +701,96 @@
 					<li>Khác</li>
 				</ul>
 			</div>
+	</div>
+	<!-- section 6 -->
+	<!-- <div class="section6">
+		<div class="row">
+			
+			<div class="col-sm">
+				<label for="kinhdoanh">
+						Kinh doanh	</label>
+						<input type="checkbox" id="kinhdoanh" name="kinhdoanh" value="kinhdoanh">
+			
+			</div>
+			<div class="col-sm" for="maymac">
+				<label for="maymac">May mặc & Thủ công nghiệp</label>
+				<input type="checkbox" id="maymac" name="maymac" value="maymac">
+			</div>
+			<div class="col-sm" for="suckhoe">
+				<label for="suckhoe">Sức khỏe & Làm đẹp</label>
+				<input type="checkbox" id="suckhoe" name="suckhoe" value="suckhoe">
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-sm" for="taichinh">
+				<label for="taichinh">Tài chính</label>
+				<input type="checkbox" id="taichinh" name="taichinh" value="taichinh">
+			</div>
+			<div class="col-sm"  for="nhansu">
+				<label for="nhansu">Nhân sự</label>
+				<input type="checkbox" id="nhansu" name="nhansu" value="nhansu">
+			</div>
+			<div class="col-sm" for="logistic">
+				<label>Xuất nhập khẩu & Logistics</label>
+				<input type="checkbox" id="logistic" name="logistic" value="logistic">
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-sm" for="thietke">
+				<label  >Thiết kế</label>
+				<input type="checkbox" id="thietke" name="thietke" value="thietke">
+			</div>
+			<div class="col-sm" for="congnghe">
+				<label >Công nghệ & Lập trình</label>
+				<input type="checkbox" id="congnghe" name="congnghe" value="congnghe">
+			</div>
+			<div class="col-sm" for="bds">
+				<label>Bất động sản</label>
+				<input type="checkbox" id="bds" name="bds" value="bds">
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-sm">	
+				<label for="kientruc">Kiến trúc & Xây dựng</label>
+				<input type="checkbox" id="kientruc" name="kientruc" value="kientruc">
+			</div>
+			<div class="col-sm" for="khac">
+				<label >Khác</label>
+				<input type="checkbox" id="khac" name="khac" value="Bike">
+			</div>
+			<div class="col-sm" style="border:none">
+			</div>
+		  </div>
+	</div> -->
+	<div class="section6">
+		<p style="font-size:16px; color:rgb(210, 74, 220)">ĐỂ MỌI LỰA CHỌN NGHỀ NGHIỆP LÀ TRÊN CẢ CHÍNH XÁC</p>
+		<p style="font-size:52px;font-weight:bold">ĐỒNG HÀNH CÙNG MENTOR?</p>
+		<p style="font-size:13px">Đăng Ký & Kết Nối Cùng Mentor</p>
+		<div class="btns-box" style="margin-top:55px;">
+			<a href="#" class="theme-btn btn-style-four"><span class="txt">
+					Đăng ký ngay ></span></a>
+		
 		</div>
-		 
+	</div>
+
+
+	<div class="section7">
+		<div class="row">
+			<div class="col-sm-5 find-mentor" style="background-image:url(./images/find-mentor.jpg);">
+				<p>Tìm kiếm Mentor</p>
+			</div>
+			<div class="col-sm-0" style="width:20px;"></div>
+			<div class="col-sm-5 be-mentor"  style="background-image:url(./images/be-mentor-2.jpg)">
+				<p>Đăng ký Mentor</p>
+			</div>
+		</div>
+	</div>
 
 	</div>
 
 
 	<footer class="footer-distributed">
-
-		<div class="footer-left">
+		<div class="footer-left" style="margin-left:50px;">
 
 			<h3><span>Mentoré</span></h3>
 
@@ -714,6 +854,27 @@
 
 	<!--Scroll to top-->
 	<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-up"></span></div>
+
+
+	<script>
+		$('.col-sm').click(function () {
+
+			if ($(this).find('input:checkbox[name=markerType]').is(":checked")) {
+
+			$(this).find('input:checkbox[name=markerType]').attr("checked", false);
+			}
+			else {
+				$(this).find('input:checkbox[name=markerType]').prop("checked", true);
+			}
+
+			alert($(this).find('input:checkbox[name=markerType]').is(":checked"));
+			});
+
+
+			$('input[type=checkbox]').click(function (e) {
+			e.stopPropagation();
+			});
+	</script>
 
 	<script src="js/jquery.js"></script>
 	<script src="js/popper.min.js"></script>
