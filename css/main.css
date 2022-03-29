@@ -1638,6 +1638,10 @@ img{
 	-o-transition:all 500ms ease;
 }
 
+.selected{
+	background-color: white; width: 150px; height: 30px; user-select: auto; border-radius:15px
+}
+
 .main-menu .navigation > li > ul > li:hover > a{
 	color:#ffffff;
 	padding-left:30px;
