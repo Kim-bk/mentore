@@ -10,6 +10,7 @@
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/audio.css" rel="stylesheet">
 
 	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 	<link rel="icon" href="images/favicon.png" type="image/x-icon">
@@ -88,7 +89,7 @@
 		/* position: relative;
 		top:30px; */
 		bottom:59px;
-		width:930px;
+		width:934px;
 		background-color:white;
 		height:530px;
 		border-radius:10px;
@@ -168,6 +169,32 @@
 	duration: 1400,
 	})
 	  </script>
+
+	  <script>
+					// PRESS THE MENU BUTTON TO TRIGGER ANIMATION
+			// PRESS PLAY BUTTON TO LISTEN THE DEMO SONG
+
+			// As seen on: "https://dribbble.com/shots/2144866-Day-5-Music-Player-Rebound/"
+
+			// THANK YOU!
+
+			var audio = document.getElementById('audio');
+			var playpause = document.getElementById("play");
+
+
+			function togglePlayPause() {
+			if (audio.paused || audio.ended) {
+				playpause.title = "Pause";
+				audio.play();
+			} else {
+				playpause.title = "Play";
+				audio.pause();
+			}
+			}
+
+
+	  </script>
+
 	<div class="page-wrapper">
 
 		<!-- Preloader -->
@@ -528,7 +555,7 @@
 									</div>
 							</div>
 							
-								<!-- feed5 -->
+								<!-- feed5 - video -->
 							<div class=" feed  d-flex flex-column" style="height:917px;">
 								<div class=" p-2" style="height:130px">
 									<div style="position:relative">
@@ -598,6 +625,164 @@
 	
 								</div>
 							</div>
+
+									<!-- feed6 - audio -->
+									<div class=" feed  d-flex flex-column" style="height:773px;">
+										<!-- PRESS THE MENU BUTTON TO TRIGGER ANIMATION -->
+<!-- PRESS PLAY BUTTON TO LISTEN THE DEMO SONG -->
+
+<!-- As seen on: "https://dribbble.com/shots/2144866-Day-5-Music-Player-Rebound/" -->
+
+<!-- THANK YOU! -->
+
+<article class="screen">
+	<input type="checkbox" value="None" id="magicButton" name="check" />
+	<label class="main" for="magicButton"></label>
+  
+	<div class="coverImage"></div>
+	<div class="search"></div>
+	<div class="bodyPlayer"></div>
+  
+	<table class="list">
+	  <tr class="song">
+		<td class="nr">
+		  <h5>1<h5></td>
+						  <td class="title"><h6>Heavydirtysoul<h6></td>
+						  <td class="length"><h5>3:54<h5></td>
+						  <td><input type="checkbox" id="heart"/><label class="zmr" for="heart"></label></td>
+					  </tr>
+				  
+					  <tr class="song">
+						  <td class="nr"><h5>2<h5></td>
+						  <td class="title"><h6 style="color: #ff564c;">StressedOut<h6></td>
+						  <td class="length"><h5>3:22<h5></td>
+						  <td><input type="checkbox" id="heart1" checked /><label class="zmr" for="heart1"></label></td>
+					  </tr>
+				  
+					  <tr class="song">
+						  <td class="nr"><h5>3<h5></td>
+						  <td class="title"><h6>Ride<h6></td>
+						  <td class="length"><h5>3:34<h5></td>
+						  <td><input type="checkbox" id="heart2"/><label class="zmr" for="heart2"></label></td>
+					  </tr>
+				  
+					  <tr class="song">
+						  <td class="nr"><h5>4<h5></td>
+						  <td class="title"><h6>Fairy Local<h6></td>
+						  <td class="length"><h5>3:27<h5></td>
+						  <td><input type="checkbox" id="heart3" checked /><label class="zmr" for="heart3"></label></td>
+					  </tr>
+					  
+					  <tr class="song">
+						  <td class="nr"><h5>5<h5></td>
+						  <td class="title"><h6>Tear in My Heart<h6></td>
+						  <td class="length"><h5>3:08<h5></td>
+						  <td><input type="checkbox" id="heart4"/><label class="zmr" for="heart4"></label></td>
+					  </tr>
+					  
+					  <tr class="song">
+						  <td class="nr"><h5>6<h5></td>
+						  <td class="title"><h6>Lane Boy<h6></td>
+						  <td class="length"><h5>4:13<h5></td>
+						  <td><input type="checkbox" id="heart5"/><label class="zmr" for="heart5"></label></td>
+					  </tr>
+					  
+					  <tr class="song">
+						  <td class="nr"><h5>7<h5></td>
+						  <td class="title"><h6>The Judge<h6></td>
+						  <td class="length"><h5>4:57<h5></td>
+						  <td><input type="checkbox" id="heart6"/><label class="zmr" for="heart6"></label></td>
+					  </tr>
+					  
+					  <tr class="song">
+						  <td class="nr"><h5>8<h5></td>
+						  <td class="title"><h6>Doubt<h6></td>
+						  <td class="length"><h5>3:11<h5></td>
+						  <td><input type="checkbox" id="heart7"/><label class="zmr" for="heart7"></label></td>
+					  </tr>
+					  
+					  <tr class="song">
+						  <td class="nr"><h5>9<h5></td>
+						  <td class="title"><h6>Polarize<h6></td>
+						  <td class="length"><h5>3:46<h5></td>
+						  <td><input type="checkbox" id="heart8"/><label class="zmr" for="heart8"></label></td>
+					  </tr>
+				  </table>
+				  
+				  <div class="shadow"></div>
+				  
+				  <div class="bar"></div>
+				  
+				  <div class="info">
+					  <h4>STRESSED OUT</h4>
+					  <h3>twenty one pilots - Blurryface</h3>
+				  </div>
+  <audio preload="auto" id="audio" controls>
+	<source src="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3">
+	<source src="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.ogg">
+	  </audio>
+				  <table class="player">
+					  <td><input type="checkbox" id="backward"/><label class="backward" for="backward"></label></td>
+					  <td><input type="checkbox" id="play" title="Play" onclick="togglePlayPause()"/><label class="play" for="play"></label></td>
+					  <td><input type="checkbox" id="forward"/><label class="forward" for="forward"></label></td>
+				  </table>
+				  
+				  <table class="footer">
+					  <td><input type="checkbox" id="love" checked /><label class="love" for="love"></label></td>
+					  <td><input type="checkbox" id="shuffle"/><label class="shuffle" for="shuffle"></label></td>
+					  <td><input type="checkbox" id="repeat" checked /><label class="repeat" for="repeat"></label></td>
+					  <td><input type="checkbox" id="options"/><label class="options" for="options"></label></td>
+				  </table>
+				  
+				  <div class="current"><h2>STRESSED OUT</h2></div>
+				  
+			  
+		  </article>
+		<div style="padding-top:658px;">
+			<div class=" p-2 row" style="height:30px;">
+				<div class="col" style="bottom:5px;">
+					<img class="icon-react" src="./images/like.svg">
+					<img class="icon-react" src="./images/love.svg">
+					<img class="icon-react" src="./images/suprise.svg">
+					
+					<p style="font-size:16px; right:-90px; bottom:25px;">225</p>
+				</div>
+				<div class="col" style="text-align:right; font-size:16px;"><a href="#">100 Comments</a> <a href="#">101 Shares</a></div>
+
+
+		</div>
+		<hr/>
+		<div class="p-2" style="bottom:20px; position:relative;">
+			<div class="row" style="text-align:center; font-size:16px;">
+				<div class="col-sm" style="display:flex;">
+					
+					<button>
+						<img class="user-action" src="./images/user-like.png">
+						Like
+					</button>
+				</div>
+				<div class="col-sm" style="display:flex;">
+					
+					<button>
+						<img class="user-action" src="./images/user-comment.jpg" style="width:20px;height:20px;">
+						Comment
+					</button>
+					
+				</div>
+				<div class="col-sm" style="display:flex;">
+			
+					<button>
+						<img class="user-action" src="./images/user-share.png"  style="width:25px;height:25px;">
+						Share
+					</button>
+				</div>
+			  </div>
+
+		</div>
+		</div>
+		
+	
+					</div>
 	
 						
 
