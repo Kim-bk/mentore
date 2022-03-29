@@ -83,6 +83,7 @@
 		/* position: relative;
 		top:30px; */
 		bottom:59px;
+		width:930px;
 		background-color:white;
 		height:530px;
 		border-radius:10px;
@@ -91,14 +92,18 @@
 	}
 
 	.sponsor{
-		position: fixed;
-    	bottom:60px;
-		background-color:white;
-		width:101%;
-		height:550px;
-		right:50px;
+
+		/* position: fixed; */
+		bottom: 6px;
+		background-color: rgba(255, 255, 255, 0);
+		color: white;
+		font-weight: bold;
+		text-align: left;
+		font-size: 20px;
+		height: 550px;
+		right: -207px;
 		/* border-radius:10px; */
-		border: 1px solid rgb(74, 71, 71);
+		/* border: 1px solid rgb(74, 71, 71); */
 	}
 	
 	.avatar {
@@ -108,8 +113,10 @@
 	border-radius: 50%;
 	}
 	.text-feed{
+		padding: 0px 30px 0px 30px;
 		color:#131212;
 		font-size:16px;
+		text-align:justify;
 	}
 	.slider-section-two a:hover{
 		text-decoration: underline;
@@ -125,6 +132,7 @@
 		font-weight:bold;
 		cursor: pointer;
 		background-color: rgb(255, 255, 255);
+		font-family: 'Quicksand', sans-serif;
 		display: block;
 		width: 100%;
 		height:50px;
@@ -142,6 +150,10 @@
 	.user-action{
 		width:30px;
 		height:30px;
+	}
+	.img-sponsor{
+		padding-bottom: 10px;
+		width:100%;
 	}
 </style>
 
@@ -260,7 +272,7 @@
 			<div class="container">
 				<div class="row justify-content-md-center">
 				
-					<div class="col-md-9">
+					<div class="col-md-8" style="right:45px">
 						<!-- Feed 1 -->
 						<div class=" feed  d-flex flex-column">
 							<div class=" p-2" style="height:130px">
@@ -332,7 +344,7 @@
 							<div class=" p-2" style="height:130px">
 								<div style="position:relative">
 									<img src="./images/user/user2.png" alt="Avatar" class="avatar" style="cursor:pointer">
-									<p class="name-user" style="right:-95px; bottom:75px; font-weight:bold; font-size:16px">Nguyen Nam Thanh</p>
+									<p class="name-user" style="right:-95px; bottom:75px; font-weight:bold; font-size:16px">Tran Minh Tan</p>
 									<p  class="name-user"  style="right:-95px; bottom:85px; font-weight:bold; font-size:13px">2 giờ trước</p>
 								</div>
 								
@@ -395,10 +407,10 @@
 
 						
 							<!-- Feed 3 -->
-							<div class=" feed  d-flex flex-column" style="height:800px;">
+							<div class=" feed  d-flex flex-column" style="height:825px;">
 								<div class=" p-2" style="height:130px">
 									<div style="position:relative">
-										<img src="./images/user/user2.png" alt="Avatar" class="avatar" style="cursor:pointer">
+										<img src="./images/user/user3.png" alt="Avatar" class="avatar" style="cursor:pointer">
 										<p class="name-user" style="right:-95px; bottom:75px; font-weight:bold; font-size:16px">David Jackson</p>
 										<p  class="name-user"  style="right:-95px; bottom:85px; font-weight:bold; font-size:13px">5 giờ trước</p>
 									</div>
@@ -406,7 +418,7 @@
 								</div>
 	
 								<div class=" p-2">
-									<p class="text-feed">
+									<div class="text-feed">
 										<p style="font-weight:bold; bottom:15px;">[FOR FRESH GRADS] 
 											<br/>
 											DON'T MISS OUT ON THE CHANCE TO JOIN FAST RETAILING VIETNAM (UNIQLO / GU)
@@ -415,8 +427,8 @@
 
 										<br>
 										… <a href="#">See more</a>
-									</p>
-									<img src="./images/feed3.jpg" style="height:375px; width:750px; padding-left:50px; cursor: pointer;">
+									</div>
+									<img src="./images/feed3.jpg" style="height:425px; width:100%; cursor: pointer;">
 								</div>
 								
 								<div class=" p-2 row" style="height:30px;">
@@ -464,7 +476,7 @@
 
 						
 							<!-- Feed 4 -->
-							<div class=" feed  d-flex flex-column" style="height:575px;">
+							<div class=" feed  d-flex flex-column" style="height:630px;">
 
 									<img src="./images/feed4.png" style="top:20px; border-radius:10px 10px 0px 0px;">
 									<div class=" p-2 row" style="height:30px;">
@@ -509,13 +521,97 @@
 									</div>
 							</div>
 							
+								<!-- feed5 -->
+							<div class=" feed  d-flex flex-column" style="height:917px;">
+								<div class=" p-2" style="height:130px">
+									<div style="position:relative">
+										<img src="./images/user/user3.png" alt="Avatar" class="avatar" style="cursor:pointer">
+										<p class="name-user" style="right:-95px; bottom:75px; font-weight:bold; font-size:16px">David Jackson</p>
+										<p  class="name-user"  style="right:-95px; bottom:85px; font-weight:bold; font-size:13px">5 giờ trước</p>
+									</div>
+									
+								</div>
+	
+								<div class=" p-2">
+									<div class="text-feed">
+										<p style="font-weight:bold; bottom:15px;">
+										
+											Marketing là gì, có khó không?
+										</p>
+										Trong video này, mình sẽ chia sẻ với bạn định nghĩa của marketing cũng như các khái niệm cơ bản trong ngành marketing mà bạn cần phải nắm được. Marketing là gì? Học và làm marketing khó hay dễ? Có những khía cạnh gì trong marketing? Cùng tìm hiểu và thảo luận nhé.
+									
+									</div>
+									<br>
+									<video style="width:100%; cursor:pointer" controls>
+										<source src="./video/video_feed3.mp4" type="video/mp4">
+										<!-- <source src="movie.ogg" type="video/ogg"> -->
+										<!-- Your browser does not support the video tag. -->
+									  </video>
+									  
+								</div>
+								
+								<div class=" p-2 row" style="height:30px;">
+										<div class="col" style="bottom:5px;">
+											<img class="icon-react" src="./images/like.svg">
+											<img class="icon-react" src="./images/love.svg">
+											<img class="icon-react" src="./images/suprise.svg">
+											
+											<p style="font-size:16px; right:-90px; bottom:25px;">225</p>
+										</div>
+										<div class="col" style="text-align:right; font-size:16px;"><a href="#">100 Comments</a> <a href="#">101 Shares</a></div>
+	
+	
+								</div>
+								<hr/>
+								<div class="p-2" style="bottom:20px; position:relative;">
+									<div class="row" style="text-align:center; font-size:16px;">
+										<div class="col-sm" style="display:flex;">
+											
+											<button>
+												<img class="user-action" src="./images/user-like.png">
+												Like
+											</button>
+										</div>
+										<div class="col-sm" style="display:flex;">
+											
+											<button>
+												<img class="user-action" src="./images/user-comment.jpg" style="width:20px;height:20px;">
+												Comment
+											</button>
+											
+										</div>
+										<div class="col-sm" style="display:flex;">
+									
+											<button>
+												<img class="user-action" src="./images/user-share.png"  style="width:25px;height:25px;">
+												Share
+											</button>
+										</div>
+									  </div>
+	
+								</div>
+							</div>
+	
 						
 
 					</div>
 
 
-					<div class="col-md-2 sponsor">
+					<div class="col-md-4 sponsor">
 							<p>Được tài trợ</p>
+							<div class="img-sponsor">
+								<img src="./images/sponsor/sponsor1.png">
+							</div>
+							<div class="img-sponsor">
+								<img src="./images/sponsor/sponsor2.jpg">
+							</div>
+							<div class="img-sponsor" style="width:363px;right:9px; position:absolute">
+								<img src="./images/sponsor/sponsor3.png">
+							</div>
+							
+							
+							
+						
 					</div>
 				  </div>
 				

@@ -35,6 +35,7 @@
 	<link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Quicksand&display=swap" rel="stylesheet">
 
 </head>
 
@@ -141,6 +142,9 @@
 	}
 
 	.section6{ 
+		font-family: 'Alfa Slab One', cursive;
+		font-family: 'Quicksand', sans-serif;
+
 		margin-top:300px;
 		text-align:center;
 	}
@@ -288,13 +292,29 @@
 	 padding-top:15px;
 }
 
-.main-list{
+
+.main-list-bg{
 	background-image: url('./images/main-list.jpg');
+	
 	height:650px;
 		/* Center and scale the image nicely */
+
+		 /* Add the blur effect */
+		 filter: blur(2px);
+  -webkit-filter: blur(2px);
+
+ 
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
+}
+.bg-text{
+		position: absolute; z-index:2; transform: translate(-50%, -50%); top: 50%;
+		left: 50%;width: 100%;
+		text-align: left;
+}
+.main-list{
+	
 	margin-top:150px;
 
 	justify-content:center;
@@ -387,12 +407,13 @@
 												
 										
 										<ul class="navigation clearfix">
-											<li>
-												<label style="font-weight:bold;font-size:32px; color:black; padding:0px 0px 35px 0px;">
+											<li style="bottom:7px;">
+												<h3 style="font:normal 40px 'Cookie', cursivel; color:white; padding:0px 0px 35px 0px;"><span>Mentoré</span></h3>
+												<!-- <label style="font-weight:bold;font-size:32px; color:black; padding:0px 0px 35px 0px;">
 													Mentoré
-												</label>
+												</label> -->
 											</li>
-											<li class="dropdown"><a href="index.html" style="color:rgb(113,63,193)">Trang chủ</a>
+											<li class="dropdown" style="  background-color:white; width:150px; height:30px	"><a href="index.html" style="color:rgb(113,63,193);">Trang chủ</a>
 											</li>
 	
 											<li class="dropdown"><a href="list_mentor.html">Tìm kiếm Mentor</a>
@@ -546,8 +567,8 @@
 	
 
 	
-		<div class="section2" data-aos="zoom-in-right" >
-			<div class="row">
+		<div class="section2" data-aos="zoom-in-right"  >
+			<div class="row" style="padding-top:35px;">
 				<h3 style="position:absolute; padding-top:20px;">Bạn có đang ...</h3>
 			<br/>
 			<div class="column">
@@ -620,7 +641,7 @@
 		<!-- section 4 -->
 		<div class="section4"data-aos="fade-up"
 		data-aos-duration="2000">
-		<div class="row" >
+		<div class="row" style="padding-top:30px">
 				<div style="text-align:center">
 					<h3 style="position:absolute; padding-left:155px; padding-top:10px;">MENTORÉ CUNG CẤP ĐA DẠNG SẢN PHẨM, DỊCH VỤ HƯỚNG NGHIỆP ĐẾN <br> THẾ HỆ TRẺ VIỆT NAM</h3>
 				</div>
@@ -663,7 +684,7 @@
 	  	</div>
 
 		  <!-- section 4- 2 -->
-  <div class="row" style="height:250px; margin:0;padding:0">
+  <div class="row" style="height:250px;top:10px;">
 	<div class="column section4-2">
 	  <p style="font-weight:bold; text-align: center; font-size:25px;">250+ mentor</p>
 	</div>
@@ -680,25 +701,30 @@
 
 	<!-- section 5 -->
 	<div class="main-list" data-aos="fade-left">
-			<div class="content-right">
-				<p>Chọn lĩnh vực bạn <br> quan tâm để tìm kiếm Mentor.</p>
+			<div class="main-list-bg"></div>
+			<div class="bg-text" style="padding-top:10px;">
+				<div class="content-right" style="left:-10px;top:110px; position:absolute">
+					<p>Chọn lĩnh vực bạn <br> quan tâm để tìm kiếm Mentor.</p>
+				</div>
+				<div class="content-left">
+					<ul>
+						<li>Kinh doanh</li>
+						<li>May mặc & Thủ công nghiệp</li>
+						<li>Sức khỏe & Làm đẹp</li>
+						<li>Tài chính</li>
+						<li>Nhân sự</li>
+						<li>Xuất nhập khẩu & Logistics</li>
+						<li>Thiết kế</li>
+						<li>Công nghệ & Lập trình</li>
+						<li>Bất động sản</li>
+						<li>Tài chính</li>
+						<li>Nhân sự</li>
+						<li>Khác</li>
+					</ul>
+				</div>
+
 			</div>
-			<div class="content-left">
-				<ul>
-					<li>Kinh doanh</li>
-					<li>May mặc & Thủ công nghiệp</li>
-					<li>Sức khỏe & Làm đẹp</li>
-					<li>Tài chính</li>
-					<li>Nhân sự</li>
-					<li>Xuất nhập khẩu & Logistics</li>
-					<li>Thiết kế</li>
-					<li>Công nghệ & Lập trình</li>
-					<li>Bất động sản</li>
-					<li>Tài chính</li>
-					<li>Nhân sự</li>
-					<li>Khác</li>
-				</ul>
-			</div>
+		
 	</div>
 	<!-- section 6 -->
 	<!-- <div class="section6">
@@ -761,9 +787,9 @@
 		  </div>
 	</div> -->
 	<div class="section6">
-		<p style="font-size:16px; color:rgb(210, 74, 220)">ĐỂ MỌI LỰA CHỌN NGHỀ NGHIỆP LÀ TRÊN CẢ CHÍNH XÁC</p>
-		<p style="font-size:52px;font-weight:bold">ĐỒNG HÀNH CÙNG MENTOR?</p>
-		<p style="font-size:13px">Đăng Ký & Kết Nối Cùng Mentor</p>
+		<p style="font-size:25px;font-weight: bold; color:rgb(210, 74, 220)">ĐỂ MỌI LỰA CHỌN NGHỀ NGHIỆP LÀ TRÊN CẢ CHÍNH XÁC</p>
+		<p style="font-size:52px;font-weight:900">ĐỒNG HÀNH CÙNG MENTOR?</p>
+		<p style="font-size:20px">Đăng Ký & Kết Nối Cùng Mentor</p>
 		<div class="btns-box" style="margin-top:55px;">
 			<a href="#" class="theme-btn btn-style-four"><span class="txt">
 					Đăng ký ngay ></span></a>
