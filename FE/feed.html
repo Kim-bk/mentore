@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Bảng tin | Mentoré</title>
+	<title>Bản tin | Mentoré</title>
 	<!-- Stylesheets -->
 
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -35,6 +35,7 @@
 	<link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Quicksand&display=swap" rel="stylesheet">
 
 	<script type="text/javascript">
 		$(function(){
@@ -54,6 +55,10 @@
 </head>
 
 <style>
+	.p-2 .text-feed{
+		font-family: 'Alfa Slab One', cursive;
+		font-family: 'Quicksand', sans-serif;
+	}
 	 .content-column .inner-column h1{
 		color: rgb(113,63,193);
 		color: linear-gradient(0deg, rgba(113,63,193,1) 0%, rgba(112,67,207,1) 3%, rgba(103,71,198,1) 15%, rgba(131,71,203,1) 27%, rgba(166,88,212,1) 44%, rgba(188,96,221,1) 58%, rgba(217,110,212,1) 80%, rgba(228,120,203,1) 94%);
@@ -138,7 +143,7 @@
 		height:50px;
 		bottom:45px;
 	}
-
+	
 	.p-2 button:hover{
 		background-color: rgb(216, 210, 210);
 		border-radius:10px;
@@ -203,15 +208,18 @@
 													Mentoré
 												</label>
 											</li>
-											<li class="dropdown"><a href="index.html">Trang chủ</a>
+											<li ><a href="index.html">Trang chủ</a>
 											</li>
 	
-											<li class="dropdown"><a href="list_mentor.html">Tìm kiếm Mentor</a>
+											<li "><a href="list_mentor.html">Tìm kiếm Mentor</a>
 											</li>
-											<li class="dropdown" ><a href="feed.html" style="color:rgb(113,63,193)">Bản tin</a>
+											<li style="  background-color:white; width:150px; height:30px	"><a href="feed.html" style="color:rgb(113,63,193)">Bản tin</a>
 											</li>
-											<li class="dropdown"> 
-												<a href="#">Nhiều hơn</a>
+											<li class="dropdown" > 
+												<a>Nhiều hơn</a>
+													<ul class="dropdown-menu">
+													<li><a href="list_workshop.html">Tìm kiếm Workshop</a></li>
+												</ul>
 											</li>
 										</ul>
 									</div>
@@ -274,7 +282,7 @@
 				
 					<div class="col-md-8" style="right:45px">
 						<!-- Feed 1 -->
-						<div class=" feed  d-flex flex-column">
+						<div class=" feed  d-flex flex-column" style="height:440px;">
 							<div class=" p-2" style="height:130px">
 								<div style="position:relative">
 									<img src="./images/user/user1.png" alt="Avatar" class="avatar" style="cursor:pointer">
@@ -285,16 +293,15 @@
 							</div>
 
 							<div class=" p-2">
-								<p class="text-feed">
-									5 năm chinh chiến nghề sales xuất nhập khẩu – Sướng và khổ?
-									<br/>
+								<div class="text-feed">
+									<p style="font-weight:bold; color:black;bottom:15px;">	5 năm chinh chiến nghề sales xuất nhập khẩu – Sướng và khổ?</p>
 									Dạo này các em gửi cho mình nhiều tin nhắn tâm sự chuyện chọn ngành học. Các em ibx mình thì toàn hỏi về ngành XNK. Nhiều bạn hỏi quá, mình không trả lời hết, nên hôm nay post bài này cho các bạn tham khảo.
 									<br/>
 									Có em hỏi “Chị ơi, em thích nghề sales quá, bán hàng được gặp người này người kia mở rộng mối quan hệ. Lương lại còn cao ngất ngưởng sướng quá chị ạ. Ngoài những cái sướng ra thì nghề sales XNK có gì vất vả không chị?”
 									Trả lời ngay và luôn cho em gái là: những cái sướng em thấy chỉ là bề nổi của tảng băng chìm
 									<br>
 									… <a href="#">See more</a>
-								</p>
+								</div>
 								
 							</div>
 							<div class=" p-2 row" style="height:30px;">
@@ -340,7 +347,7 @@
 
 
 							<!-- Feed 2 -->
-						<div class=" feed  d-flex flex-column" style="height:443px;">
+						<div class=" feed  d-flex flex-column" style="height:420px;">
 							<div class=" p-2" style="height:130px">
 								<div style="position:relative">
 									<img src="./images/user/user2.png" alt="Avatar" class="avatar" style="cursor:pointer">
@@ -351,15 +358,15 @@
 							</div>
 
 							<div class=" p-2">
-								<p class="text-feed">
-									Anh chị cô chú mentor trên Mentoré cho em/ con hỏi chút ạ.
-									<br/>
+								<div class="text-feed">
+									<p style="font-weight:bold; color:black;bottom:15px;">Anh chị cô chú mentor trên Mentoré cho em/ con hỏi chút ạ.</p>
+									
 									Em năm nay học 12, sắp sửa thi đại học. Em tính thi ngành công nghệ thông tin. Anh hàng xóm em quen cũng học ngành này, đã ra trường 3 năm. Ảnh khuyên em không nên học chính quy vì chương trình đào tạo 4 năm, không học trọng tâm chuyên môn, học nhiều môn đại cương vô bổ. Ảnh nói học xong 12 thì đăng ký học lập trình ở các trung tâm là được, chịu khó thực hành nhiều. 
 									<br/>
 									Em cũng không biết có nên nghe lời ảnh không. Nhờ các anh chị cô chú mentor giúp với ạ!
 									<br/>
 								
-								</p>
+								</div>
 								
 							</div>
 							<div class=" p-2 row" style="height:30px;">
@@ -478,7 +485,7 @@
 							<!-- Feed 4 -->
 							<div class=" feed  d-flex flex-column" style="height:630px;">
 
-									<img src="./images/feed4.png" style="top:20px; border-radius:10px 10px 0px 0px;">
+									<img src="./images/feed4.png" style="top:20px; border-radius:10px 10px 0px 0px; cursor: pointer;">
 									<div class=" p-2 row" style="height:30px;">
 										<div class="col" style="bottom:5px;">
 											<img class="icon-react" src="./images/suprise.svg">
@@ -598,7 +605,7 @@
 
 
 					<div class="col-md-4 sponsor">
-							<p>Được tài trợ</p>
+							<p>Sponsored by</p>
 							<div class="img-sponsor">
 								<img src="./images/sponsor/sponsor1.png">
 							</div>
