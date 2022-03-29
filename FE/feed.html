@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Bản tin | Mentoré</title>
+	<title>Bảng tin | Mentoré</title>
 	<!-- Stylesheets -->
 
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -11,7 +11,7 @@
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
 	<link href="css/audio.css" rel="stylesheet">
-
+	<link rel="icon" href="images/logo-official.png" type="image/x-icon">
 	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 	<link rel="icon" href="images/favicon.png" type="image/x-icon">
 
@@ -38,21 +38,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Quicksand&display=swap" rel="stylesheet">
 
-	<script type="text/javascript">
-		$(function(){
-        var stickyHeaderTop = $('#stickytypeheader').offset().top;
- 
-        $(window).scroll(function(){
-                if( $(window).scrollTop() > stickyHeaderTop ) {
-                        $('#stickytypeheader').css({position: 'fixed', top: '0px'});
-                        $('#sticky').css('display', 'block');
-                } else {
-                        $('#stickytypeheader').css({position: 'static', top: '0px'});
-                        $('#sticky').css('display', 'none');
-                }
-			});
-	});
-	</script>
 </head>
 
 <style>
@@ -231,16 +216,17 @@
 										
 										<ul class="navigation clearfix">
 											<li>
-												<label style="font-weight:bold;font-size:32px; color:black; padding:0px 0px 35px 0px;">
-													Mentoré
-												</label>
+												<div class="logo">
+													<a href="index.html"><img src="./images/logo-official.png"/></a>
+													
+												</div>
 											</li>
 											<li ><a href="index.html">Trang chủ</a>
 											</li>
 	
 											<li "><a href="list_mentor.html">Tìm kiếm Mentor</a>
 											</li>
-											<li style="  background-color:white; width:150px; height:30px	"><a href="feed.html" style="color:rgb(113,63,193)">Bản tin</a>
+											<li style="  background-color:white; width:150px; height:30px	"><a href="feed.html" style="color:rgb(113,63,193)">Bảng tin</a>
 											</li>
 											<li class="dropdown" > 
 												<a>Nhiều hơn</a>
@@ -637,89 +623,25 @@
 
 <article class="screen">
 	<input type="checkbox" value="None" id="magicButton" name="check" />
-	<label class="main" for="magicButton"></label>
+	<!-- <label class="main" for="magicButton"></label> -->
   
 	<div class="coverImage"></div>
-	<div class="search"></div>
+	<!-- <div class="search"></div> -->
 	<div class="bodyPlayer"></div>
   
-	<table class="list">
-	  <tr class="song">
-		<td class="nr">
-		  <h5>1<h5></td>
-						  <td class="title"><h6>Heavydirtysoul<h6></td>
-						  <td class="length"><h5>3:54<h5></td>
-						  <td><input type="checkbox" id="heart"/><label class="zmr" for="heart"></label></td>
-					  </tr>
-				  
-					  <tr class="song">
-						  <td class="nr"><h5>2<h5></td>
-						  <td class="title"><h6 style="color: #ff564c;">StressedOut<h6></td>
-						  <td class="length"><h5>3:22<h5></td>
-						  <td><input type="checkbox" id="heart1" checked /><label class="zmr" for="heart1"></label></td>
-					  </tr>
-				  
-					  <tr class="song">
-						  <td class="nr"><h5>3<h5></td>
-						  <td class="title"><h6>Ride<h6></td>
-						  <td class="length"><h5>3:34<h5></td>
-						  <td><input type="checkbox" id="heart2"/><label class="zmr" for="heart2"></label></td>
-					  </tr>
-				  
-					  <tr class="song">
-						  <td class="nr"><h5>4<h5></td>
-						  <td class="title"><h6>Fairy Local<h6></td>
-						  <td class="length"><h5>3:27<h5></td>
-						  <td><input type="checkbox" id="heart3" checked /><label class="zmr" for="heart3"></label></td>
-					  </tr>
-					  
-					  <tr class="song">
-						  <td class="nr"><h5>5<h5></td>
-						  <td class="title"><h6>Tear in My Heart<h6></td>
-						  <td class="length"><h5>3:08<h5></td>
-						  <td><input type="checkbox" id="heart4"/><label class="zmr" for="heart4"></label></td>
-					  </tr>
-					  
-					  <tr class="song">
-						  <td class="nr"><h5>6<h5></td>
-						  <td class="title"><h6>Lane Boy<h6></td>
-						  <td class="length"><h5>4:13<h5></td>
-						  <td><input type="checkbox" id="heart5"/><label class="zmr" for="heart5"></label></td>
-					  </tr>
-					  
-					  <tr class="song">
-						  <td class="nr"><h5>7<h5></td>
-						  <td class="title"><h6>The Judge<h6></td>
-						  <td class="length"><h5>4:57<h5></td>
-						  <td><input type="checkbox" id="heart6"/><label class="zmr" for="heart6"></label></td>
-					  </tr>
-					  
-					  <tr class="song">
-						  <td class="nr"><h5>8<h5></td>
-						  <td class="title"><h6>Doubt<h6></td>
-						  <td class="length"><h5>3:11<h5></td>
-						  <td><input type="checkbox" id="heart7"/><label class="zmr" for="heart7"></label></td>
-					  </tr>
-					  
-					  <tr class="song">
-						  <td class="nr"><h5>9<h5></td>
-						  <td class="title"><h6>Polarize<h6></td>
-						  <td class="length"><h5>3:46<h5></td>
-						  <td><input type="checkbox" id="heart8"/><label class="zmr" for="heart8"></label></td>
-					  </tr>
-				  </table>
+
 				  
 				  <div class="shadow"></div>
 				  
 				  <div class="bar"></div>
 				  
 				  <div class="info">
-					  <h4>STRESSED OUT</h4>
-					  <h3>twenty one pilots - Blurryface</h3>
+					  <h4>KỸ SƯ NÔNG NGHIỆP - Hoà mình cùng thiên nhiên?| Kỹ sư Trần Thái Bình |NGHE ĐÚNG NGƯỜI LÀM ĐÚNG VIỆC</h4>
+					  <!-- <h3>twenty one pilots - Blurryface</h3> -->
 				  </div>
   <audio preload="auto" id="audio" controls>
 	<source src="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3">
-	<source src="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.ogg">
+
 	  </audio>
 				  <table class="player">
 					  <td><input type="checkbox" id="backward"/><label class="backward" for="backward"></label></td>
@@ -822,6 +744,21 @@
 	<!--Scroll to top-->
 	<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-up"></span></div>
 
+	<script type="text/javascript">
+		$(function(){
+        var stickyHeaderTop = $('#stickytypeheader').offset().top;
+ 
+        $(window).scroll(function(){
+                if( $(window).scrollTop() > stickyHeaderTop ) {
+                        $('#stickytypeheader').css({position: 'fixed', top: '0px'});
+                        $('#sticky').css('display', 'block');
+                } else {
+                        $('#stickytypeheader').css({position: 'static', top: '0px'});
+                        $('#sticky').css('display', 'none');
+                }
+			});
+	});
+	</script>
 	<script src="js/jquery.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/jquery.scrollTo.js"></script>

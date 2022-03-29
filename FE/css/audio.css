@@ -80,10 +80,9 @@ h3 {
 }
 
 h4 {
-  margin: 0 0 5px 29px;
-  padding: 0;
+  left:-110px;
+  width:390px;
   font-size: 14px;
-  line-height: 14px;
   font-family: 'Open Sans';
   font-weight: 700;
   color: #fff;
@@ -163,7 +162,7 @@ label.main:hover:before {
   background: url('https://angstyteenwatchingtoomuchtv.files.wordpress.com/2015/07/tumblr_nlhsir3adc1sk2qobo1_12801.gif') no-repeat;
   background-size: cover;
   width: 100%;
-  height: 366px;
+  height: 450px;
   padding: 0;
   margin: 0;
   position: absolute;
@@ -201,11 +200,11 @@ label.main:hover:before {
 
 .bodyPlayer {
   position: absolute;
-  top: 366px;
+  top: 405px;
   left: 0;
   margin: 0;
   padding: 0;
-  height: 286px;
+  height: 246px;
   width: 100%;
   background: #111;
   transition: all 0.3s ease-in;
@@ -557,17 +556,17 @@ td > #play:checked ~ label.play:before {
 
 td > #love:checked ~ label.love:before {
   content: "\f004";
-  color: #ff564c;
+  color: #d66dd5;;
   transition: all 0.15s linear;
 }
 
 td > #shuffle:checked ~ label.shuffle:before {
-  color: #ff564c;
+  color:  #d66dd5;;
   transition: all 0.15s linear;
 }
 
 td > #repeat:checked ~ label.repeat:before {
-  color: #ff564c;
+  color:  #d66dd5;;
   transition: all 0.15s linear;
 }
 
