@@ -169,6 +169,7 @@
 	duration: 1400,
 	})
 	  </script>
+
 	<div class="page-wrapper">
 
 		<!-- Preloader -->
@@ -641,11 +642,14 @@
 					  <!-- <h3>twenty one pilots - Blurryface</h3> -->
 				  </div>
 				  <br>
-  <audio preload="auto" id="audio" src="./audio/audio.mp3" oncanplaythrough="this.play()"; controls>
+				  
+				  <audio preload="auto" id="audio" controls>
+					<source src="./audio/audio.mp3">
+					  </audio>
 
 
-	</audio>
 				  <table class="player">
+					
 					  <td><input type="checkbox" id="backward"/><label class="backward" for="backward"></label></td>
 					  <td><input type="checkbox" id="play" title="Play" onclick="togglePlayPause()"/><label class="play" for="play"></label></td>
 					  <td><input type="checkbox" id="forward"/><label class="forward" for="forward"></label></td>
@@ -662,6 +666,10 @@
 				  
 			  
 		  </article>
+
+
+
+		  
 		<div style="padding-top:658px;">
 			<div class=" p-2 row" style="height:30px;">
 				<div class="col" style="bottom:5px;">
@@ -747,34 +755,27 @@
 	<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-up"></span></div>
 
 
-	<script>
-		// PRESS THE MENU BUTTON TO TRIGGER ANIMATION
-// PRESS PLAY BUTTON TO LISTEN THE DEMO SONG
-
-// As seen on: "https://dribbble.com/shots/2144866-Day-5-Music-Player-Rebound/"
-
-// THANK YOU!
-
-var audio = document.getElementById('audio');
-var playpause = document.getElementById("play");
-
-
-function togglePlayPause() {
-if (audio.paused || audio.ended) {
-	playpause.title = "Pause";
-	audio.play();
-} else {
-	playpause.title = "Play";
-	audio.pause();
-}
-}
-
-
-</script>
-
-
-
 	<script type="text/javascript">
+
+
+		var audio = document.getElementById('audio');
+		var playpause = document.getElementById("play");
+
+
+		function togglePlayPause() {
+		if (audio.paused || audio.ended) {
+			playpause.title = "Pause";
+			audio.play();
+		} else {
+			playpause.title = "Play";
+			audio.pause();
+		}
+		}
+
+
+		</script>
+		<script>
+
 		$(function(){
         var stickyHeaderTop = $('#stickytypeheader').offset().top;
  
