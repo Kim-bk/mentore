@@ -169,32 +169,6 @@
 	duration: 1400,
 	})
 	  </script>
-
-	  <script>
-					// PRESS THE MENU BUTTON TO TRIGGER ANIMATION
-			// PRESS PLAY BUTTON TO LISTEN THE DEMO SONG
-
-			// As seen on: "https://dribbble.com/shots/2144866-Day-5-Music-Player-Rebound/"
-
-			// THANK YOU!
-
-			var audio = document.getElementById('audio');
-			var playpause = document.getElementById("play");
-
-
-			function togglePlayPause() {
-			if (audio.paused || audio.ended) {
-				playpause.title = "Pause";
-				audio.play();
-			} else {
-				playpause.title = "Play";
-				audio.pause();
-			}
-			}
-
-
-	  </script>
-
 	<div class="page-wrapper">
 
 		<!-- Preloader -->
@@ -658,18 +632,19 @@
   
 
 				  
-				  <div class="shadow"></div>
+			
 				  
 				  <div class="bar"></div>
 				  
-				  <div class="info">
-					  <h4>KỸ SƯ NÔNG NGHIỆP - Hoà mình cùng thiên nhiên?| Kỹ sư Trần Thái Bình |NGHE ĐÚNG NGƯỜI LÀM ĐÚNG VIỆC</h4>
+				  <div class="info" style="text-align:center">
+					  <h4>KỸ SƯ NÔNG NGHIỆP<br>Hoà mình cùng thiên nhiên?| Kỹ sư Trần Thái Bình<br>NGHE ĐÚNG NGƯỜI LÀM ĐÚNG VIỆC</h4>
 					  <!-- <h3>twenty one pilots - Blurryface</h3> -->
 				  </div>
-  <audio preload="auto" id="audio" controls>
-	<source src="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3">
+				  <br>
+  <audio preload="auto" id="audio" src="./audio/audio.mp3" oncanplaythrough="this.play()"; controls>
 
-	  </audio>
+
+	</audio>
 				  <table class="player">
 					  <td><input type="checkbox" id="backward"/><label class="backward" for="backward"></label></td>
 					  <td><input type="checkbox" id="play" title="Play" onclick="togglePlayPause()"/><label class="play" for="play"></label></td>
@@ -770,6 +745,34 @@
 
 	<!--Scroll to top-->
 	<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-up"></span></div>
+
+
+	<script>
+		// PRESS THE MENU BUTTON TO TRIGGER ANIMATION
+// PRESS PLAY BUTTON TO LISTEN THE DEMO SONG
+
+// As seen on: "https://dribbble.com/shots/2144866-Day-5-Music-Player-Rebound/"
+
+// THANK YOU!
+
+var audio = document.getElementById('audio');
+var playpause = document.getElementById("play");
+
+
+function togglePlayPause() {
+if (audio.paused || audio.ended) {
+	playpause.title = "Pause";
+	audio.play();
+} else {
+	playpause.title = "Play";
+	audio.pause();
+}
+}
+
+
+</script>
+
+
 
 	<script type="text/javascript">
 		$(function(){
