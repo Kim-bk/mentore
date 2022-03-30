@@ -1196,6 +1196,9 @@ img{
 	position:relative;
 	z-index:1;
 	background-image: url(../images/bg-title.png);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 	height:90.47px;
 	padding:auto;
 }
