@@ -1592,7 +1592,7 @@ img{
 	position:absolute;
 	left:0px;
 	top:100%;
-	width:230px;
+	width:235px;
 	z-index:100;
 	display:none;
 	opacity: 0;
@@ -1726,7 +1726,7 @@ img{
 .main-menu .navigation > li > ul > li > ul > li:hover > a{
 	color:#ffffff;
 	padding-left:30px;
-	background:#00ab15;
+	background:#af47c3d6;
 }
 
 .main-menu .navigation > li > ul > li > ul > li.dropdown > a:after{
