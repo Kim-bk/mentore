@@ -398,7 +398,7 @@ td > #heart8:checked ~ label.zmr:before {
 .info {
   width: 157px;
   position: absolute;
-  left: 392px;
+  left: 397px;
   top: 440px;
   transition: all 0.3s ease-in;
 }
@@ -428,7 +428,7 @@ td > #heart8:checked ~ label.zmr:before {
   height: 35px;
   position: absolute;
   bottom: 100px;
-  left: 50%;
+  left: 51%;
   transform: translate(-50%, 0);
   z-index: 10;
   transition: all 0.3s ease-in;
@@ -504,7 +504,7 @@ td > #play:checked ~ label.play:before {
   width: 360px;
   position: absolute;
   bottom: 10px;
-  left: 308px   ;
+  left: 326px   ;
   z-index: 20;
   transition: all 0.15s linear;
   transition: bottom 0.3s linear;
