@@ -41,7 +41,9 @@
 </head>
 
 <style>
-	.p-2 .text-feed{
+	@media screen and (min-width: 1024px)
+	{
+		.p-2 .text-feed{
 		font-family: 'Alfa Slab One', cursive;
 		font-family: 'Quicksand', sans-serif;
 	}
@@ -155,12 +157,20 @@
 		#content
 		{width:80%; padding-right:40%;}
 
+
+	}
+
 		@media screen and (max-height:200px){
 			#sidebar {
 			color:blue; font-size:50%;}
 		}
 
 		body{ width:100%; height:100%;}
+
+		@media screen and (min-width: 768px) and (max-width: 1023px)
+		{
+
+		}
 </style>
 
 <body>
@@ -342,11 +352,16 @@
 							<div class="p-2" style="bottom:20px; position:relative;">
 								<div class="row" style="text-align:center; font-size:16px;">
 									<div class="col-sm" style="display:flex;">
-										
 										<button>
-											<img class="user-action" src="./images/user-like.png">
-											<img class="user-action" src="./images/like-blue.png">
-											Like
+											<!-- <div>
+												<img class="user-action" src="./images/user-like.png">
+												Like
+											</div> -->
+											<div  style="color:#347ec1">
+												<img class="user-action" src="./images/like-blue.png">
+												Like
+											</div>
+											
 										</button>
 									</div>
 									<div class="col-sm" style="display:flex;">
@@ -433,9 +448,6 @@
 
 							</div>
 						</div>
-
-
-
 						
 							<!-- Feed 3 -->
 							<div class=" feed  d-flex flex-column" style="height:825px;">
@@ -689,8 +701,6 @@
 					<p style="font-size:16px; right:-90px; bottom:25px;">225</p>
 				</div>
 				<div class="col" style="text-align:right; font-size:16px;"><a href="#">100 Comments</a> <a href="#">101 Shares</a></div>
-
-
 		</div>
 		<hr/>
 		<div class="p-2" style="bottom:20px; position:relative;">
