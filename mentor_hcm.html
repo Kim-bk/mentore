@@ -1,28 +1,17 @@
-
-
 <!DOCTYPE html>
 <html class="" lang="en">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>Tìm Workshop | Mentoré</title>
-<!-- <meta name="description" content="Browse our mentor marketplace to find
+<title>Tìm Mentor | Mentoré</title>
+<meta name="description" content="Browse our mentor marketplace to find
     the right mentor for you. We offer various mentors in
     Software Engineering, Product, Data Science, Design and Business.">
-<meta name="robots" content="index, follow"> -->
-<link rel="canonical" href="https://mentorcruise.com/mentor/browse/">
-<!-- <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.mentorcruise.com/img/favicons/apple-touch-icon.png"> -->
-<link rel="manifest" href="/manifest.json">
-<link rel="icon" href="images/logo-official.png" type="image/x-icon">
-<!-- <link rel="mask-icon" href="https://cdn.mentorcruise.com/img/favicons/safari-pinned-tab.svg" color="#5bbad5"> -->
-<!-- <meta name="theme-color" content="#ffffff">
-<meta name="p:domain_verify" content="083c064bdfdef31e92e162517e3c52fd" />
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@mentorcruise">
-<meta name="twitter:title" content="Find a Mentor - MentorCruise"> -->
-<!-- <meta prefix="og: http://ogp.me/ns#" name="og:description" content="MentorCruise connects aspiring tech workers with industry professionals for long-term mentorship in Software Engineering, Product, Design and Business.">
-<meta prefix="og: http://ogp.me/ns#" name="og:image" content="https://cdn.mentorcruise.com/img/twittercards/mentorbrowse.jpg"> -->
+<meta name="robots" content="index, follow">
+	<link rel="icon" href="images/logo-official.png" type="image/x-icon">
+
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 <link href="css/bootstrap.css" rel="stylesheet">
@@ -32,33 +21,58 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.mentorcruise.com/css/bulma.css" />
 <link rel="stylesheet" type="text/css" href="https://cdn.mentorcruise.com/css/app.min.css" />
 <link rel="stylesheet" type="text/css" href="https://cdn.mentorcruise.com/css/tailwind.min.css" />
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-
 
 </head>
 <style>
     .bg-mc-green {
     background-color: #ba33c6!important;
-    }
+}
 
-    .blue-btn {
+.blue-btn {
     background-color: #ba33c6;
     }
-    .container-progress
-    {
-        border-radius: 10px;
-    }
-    .skill{
-        text-align: right!important;
-        border-radius: 10px 0px 0px 10px;
-    }
+
+    /* dropdown button */
    
-    .w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover {
-        background-color: #c7b0b0!important;
-    }
-    
-</style>
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content { 
+  font-size:14px;  
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+/*  */
+    </style>
 <body class="">
 
 <!-- Taskbar header -->
@@ -97,17 +111,13 @@
                                                 <a href="index.html"><img src="./images/logo-official.png"/></a>
                                                 
                                             </div>
-                                            <!-- <label style="font-weight:bold;font-size:32px; color:black; top:-10px; position:relative">
-                                                Mentoré
-                                            </label> -->
                                         </li>
                                         <li ><a href="index.html">Trang chủ</a>
-                                            <ul>
-
-                                            </ul>
+                                          
                                         </li>
 
-                                        <li><a href="list_mentor.html">Tìm kiếm Mentor</a>
+											</li>
+                                            <li class="selected"><a style="color:rgb(113,63,193);" href="list_mentor.html">Tìm kiếm Mentor</a>
                                             <!-- <ul>
                                                 <li><a href="course.html">Toán</a></li>
                                                 <li><a href="course.html">Tiếng Việt</a></li>
@@ -116,8 +126,8 @@
                                                 <li><a href="course.html">Mỹ thuật</a></li>
                                                 <li><a href="course.html">Tin học</a></li>
                                             </ul> -->
-                                        </li>
-                                        <li ><a href="feed.html">Bản tin</a>
+                                        </li>   
+                                        <li><a href="feed.html">Bản tin</a>
                                                 <!-- <ul>
                                                     <li><a href="#">Đọc Sách</a></li>
 
@@ -141,6 +151,7 @@
                                                     </li>
                                                 </ul>
                                         </li>
+                                    </ul>
                                 </div>
 
                             </nav>
@@ -244,7 +255,6 @@ Lĩnh vực
 <svg class="w-4 h-4 text-mc-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
 </span>
 </button>
-
 <input type="hidden" name="tagsearch" value="" id="category">
 </div>
 </div>
@@ -263,23 +273,29 @@ Kỹ năng
 </button>
 </div>
 </div>
-<div class="relative" x-data="{ services: false, selections: [] }">
-<div @click.away="services = false">
-<button type="button" @click="services = !services" class="bg-white border border-solid border-gray-300 cursor-pointer transition-all duration-100 relative w-full hover:bg-gray-100 rounded-full has-text-blue pl-5 pr-10 py-3 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" aria-haspopup="listbox" aria-expanded="true" x-bind:class="selections.length === 0 ? '' : 'border-gray-600'">
-<span class="truncate" x-show="selections.length === 0">
-Địa điểm
-</span>
-<span class="truncate" x-show="selections.length !== 0" style="display: none">
-<span x-text="selections.length"></span> service<span class="truncate" x-show="selections.length !== 1" style="display: none">s</span>
-</span>
-<span class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+<div class="dropdown">
+    <button type="button"  onclick="myFunction()"  class="bg-white border border-solid border-gray-300 cursor-pointer transition-all duration-100 relative w-full hover:bg-gray-100 rounded-full has-text-blue pl-5 pr-10 py-3 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm dropbtn" aria-haspopup="listbox" aria-expanded="true" x-bind:class="selections.length === 0 ? '' : 'border-gray-600'">
+        <span class="truncate" x-show="selections.length === 0">
+        Địa điểm
+        </span>
+        <span class="truncate" x-show="selections.length !== 0" style="display: none">
+        <span x-text="selections.length"></span> service<span class="truncate" x-show="selections.length !== 1" style="display: none">s</span>
+        </span>
+        <span class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+         <svg class="w-4 h-4 text-mc-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </span>
+        </button>
+        <!--  -->
+    <!-- <button type="button" onclick="myFunction()" class="dropbtn">Dropdown</button> -->
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#">TP Hồ Chí Minh</a>
+      <a href="mentor_danang.html">Đà Nẵng</a>
+      <a href="mentor_haiphong.html">Hải Phòng</a>
+      <a href="mentor_hanoi.html">Hà Nội</a>
+    </div>
+  </div>
+<!--  -->
 
- <svg class="w-4 h-4 text-mc-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-</span>
-</button>
-
-</div>
-</div>
 <div id="price_select" x-data="{ price: false }">
 <div class="relative">
 <div @click.away="price = false">
@@ -333,6 +349,11 @@ All prices in USD
 </div>
 </div>
 </div>
+
+</div>
+<div class="relative" x-data="{ more: false }" x-on:keydown.escape="more = false">
+</div>
+
 </div>
 
 
@@ -378,320 +399,51 @@ Look for sessions
 </div>
 <main class="max-w-screen-xl mx-auto">
 <div id="search-results" class="my-16 px-4">
-    <div class="relative box px-7 py-8 transition-all duration-150 mb-12 max-w-screen-lg mx-auto" style="margin-bottom: 4rem;">
-        <div class="absolute top-0 -m-4 right-12 block border-2 border-solid border-gray-200 rounded-2xl bg-white has-text-blue font-bold px-2 py-1 text-sm">
-        Hà Nội
-        </div>
-        <div class="sm:grid grid-cols-24 sm:space-x-8">
-        <div class="col-span-7 md:col-span-5 relative" style="width:350px;">
-        <a href="/mentor/LilyMalykhina/" title="Lily Malykhina" class="relative w-full h-72 bg-center bg-cover inline-block rounded-lg overflow-hidden mb-20" style="background-image: url('./images/workshop/l1.png')">
-        <div class="absolute block w-full h-full inset-x-0 bottom-0"></div>
-        </a>
-        <div class="block has-text-blue text-3xl lg:text-4xl font-black leading-none absolute bottom-0" style="font-size: 1.55rem!important;">
-        150.000
-        <span class="inline font-bold text-lg">/&nbsp;buổi</span>
-        </div>
-        </div>
-        <div class="col-span-full col-start-8 md:col-start-6 lg:col-span-19 border-0 lg:border-r border-solid border-gray-200 pr-5" style=" position: relative; padding-left:145px; border-right-width: 0px!important;">
-        <div class="relative h-full pb-16">
-        <div class="sm:grid grid-cols-1">
-        <div class="col-span-2">
-        <a href="/mentor/LilyMalykhina/" title="Lily Malykhina">
-        <h3 class="title text-2xl has-text-blue font-bold">
-            TƯ DUY SÂU HƠN TRONG NGÀNH LOGISTICS    
-        <!-- <span class="text-xl ml-1 align-middle" title="United States of America"></span> -->
-        </h3>
-        </a>
-        </div>
-        <!-- <div class="sm:text-right my-4 sm:my-0">
-        <div class="whitespace-nowrap inline cursor-default py-2 px-4 rounded-full text-sm cursor-pointer font-bold bg-mc-green text-white hover:text-white">
-        <i class="fa fa-star"></i>&nbsp;5 năm
-        </div>
-        </div> -->
-        <!-- <div style="padding-top:15px; padding-left:5px">   
-            <div class="w3-light-grey sm:text-right my-4 sm:my-0" style="height:35%">
-            <div class="w3-container w3-green w3-center " style="width:45%">45%</div>
-          </div>
-        </div> -->
-    </div>
-     
-        <!-- <span class="has-text-blue text-base mt-2 inline-block">CEO <span class="font-bold">Gogo food Vietnam</span></span><br>
-        <div class="mt-2">
-        <div class="star-rating-display" data-rating="5.0"><span class="is-vishidden">5.0 stars</span>
-        </div>
-        <span class="rating-display"><b class="has-text-blue">5.0</b>&nbsp;<span class="has-text-blue">(2 reviews)</span></span>
-        </div> -->
-        <span class="font-bold" style="position:relative; top:20px;">Mô tả</span>
-        <hr/>   
-        <div class="break-word mt-4 mb-6 max-w-screen-md text-sm leading-6 " style="top:-15px;position:relative">
-            Chuỗi cung ứng của một công ty là gì, kiểm tra chuỗi cung ứng như thế nào? Cân nhắc các yếu tố tài chính, nguồn lực và thủ tục ra sao cho kế hoạch nhập/xuất khẩu … Tất cả sẽ được giải đáp với sự trợ giúp đến từ các chuyên gia đầu ngành</div>
-        <div class="tags">
-       
-        </div>
-        <div class="md:grid grid-cols-2 mt-8 space-x-4 absolute bottom-0 w-full">
-        <div style="right:150px;">
-            <a href="/mentor/LilyMalykhina/?preselect=standard" class="w-full text-center blue-btn">Đăng ký</a>
-        </div>
-        </div>
-        <div style="padding-top:15px;">   
-            <div class="w3-light-grey sm:text-right my-4 sm:my-0 container-progress" style="height:35%">
-            <div class="w3-container w3-green w3-center skill" style="width:45%">45%</div>
-          </div>
-        </div>
-        </div>
-        </div>
-     
-        </div>
-        </div>
-        <div class="relative box px-7 py-8 transition-all duration-150 mb-12 max-w-screen-lg mx-auto" style="margin-bottom: 4rem;">
-            <div class="absolute top-0 -m-4 right-12 block border-2 border-solid border-gray-200 rounded-2xl bg-white has-text-blue font-bold px-2 py-1 text-sm">
-                Quảng Trị
+   
         
-                </div>
-        <div class="sm:grid grid-cols-24 sm:space-x-8">
-        <div class="col-span-7 md:col-span-5 relative" style="width:350px">
-        <a href="/mentor/AdamJohannsson/" title="Adam Johannsson" class="relative w-full h-72 bg-center bg-cover inline-block rounded-lg overflow-hidden mb-20" style="background-image: url('./images/workshop/tailor.jpg')">
-        <div class="absolute block w-full h-full inset-x-0 bottom-0"></div>
-        </a>
-        <div class="block has-text-blue text-3xl lg:text-4xl font-black leading-none absolute bottom-0" style="font-size: 1.55rem!important;">
-        370.000
-        <span class="inline font-bold text-lg">/&nbsp;buổi</span>
-        </div>
-        </div>
-        <div class="col-span-full col-start-8 md:col-start-6 lg:col-span-19 border-0 lg:border-r border-solid border-gray-200 pr-5" style=" position: relative; padding-left:145px;  border-right-width: 0px!important">
-        <div class="relative h-full pb-16">
-        <div class="sm:grid grid-cols-1">
-        <div class="col-span-2">
-        <a href="/mentor/AdamJohannsson/" title="Adam Johannsson">
-        <h3 class="title text-2xl has-text-blue font-bold">
-            MỘT NGÀY THỬ LÀM THỢ MAY      
-        </h3>
-        </a>
-     
-        </div>
-        <!-- <div style="padding-top:15px; padding-left:5px">   
-            <div class="w3-light-grey sm:text-right my-4 sm:my-0" style="height:68%">
-            <div class="w3-container w3-green w3-center " style="width:63%">63%</div>
-          </div>
-        </div> -->
-    </div>
-        <div class="sm:text-right my-4 sm:my-0">
-        </div>
-       
-        <span class="font-bold" style="position:relative; top:20px;">Mô tả</span>
-        <hr/>
-        <div class="break-word mt-4 mb-6 max-w-screen-md text-sm leading-6" style="top:-15px;position:relative">
-            Để làm nên một chiếc váy, chiếc áo, bạn cần phải trải qua những công đoạn gì? Tốn bao nhiêu thời gian? Liệu ngành may mặc, thiết kế có phù hợp với bạn? Hãy đến với buổi workshop để trực tiếp trải nghiệm cùng founder của local brand Leix nhé.
-        </div>
-        <div class="tags">
       
-        </div>
-        <div class="md:grid grid-cols-2 mt-8 space-x-4 absolute bottom-0 w-full">
-        <div><a href="
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                                    /mentor/AdamJohannsson/?preselect=standard" class="w-full text-center blue-btn">Đăng ký</a>
-        </div>
-        </div>
-        <div style="padding-top:45px">   
-            <div class="w3-light-grey sm:text-right my-4 sm:my-0 container-progress" style="height:68%">
-            <div class="w3-container w3-green w3-center skill " style="width:63%">63%</div>
-          </div>
-        </div>
-        
-       
-        </div>
-        </div>
-        <!-- <div class="hidden lg:block lg:col-span-6">
-        
-        <div class="font-semibold has-text-blue text-sm">Bạn sẽ nhận được gì ?
-        </div>
-        <div class="my-5 text-gray-600 text-sm w-full divide-y divide-x-0 divide-gray-200 divide-solid border-solid border-0 border-t border-b border-gray-200">
-        <div class="w-full py-3">
-        
-        Chia sẻ kinh nghiệm làm việc trong ngành F&B
-        </div>
-        <div class="w-full py-3">
-        
-        Tâm sự câu chuyện khởi nghiệp: kinh doanh quán cafe
-        </div>
-        <div class="w-full py-3">
-        
-            Những điều quan trọng cần chuẩn bị trước khi bắt tay vào kinh doanh trong ngành F&B
-            </div>
-        </div>
-        <a href="/mentor/AdamJohannsson/" class="w-full block text-right uppercase has-text-blue font-semibold text-xs">
-        Xem thêm...
-        </a>
-        </div> -->
-        </div>
-        </div>
-        <div class="relative box px-7 py-8 transition-all duration-150 mb-12 max-w-screen-lg mx-auto" style="margin-bottom: 4rem;">
-        <div class="absolute top-0 -m-4 right-12 block border-2 border-solid border-gray-200 rounded-2xl bg-white has-text-blue font-bold px-2 py-1 text-sm">
-        Đà Nẵng
-        </div>
-        <div class="sm:grid grid-cols-24 sm:space-x-8">
-        <div class="col-span-7 md:col-span-5 relative" style="width:350px">
-        <a href="/mentor/jaredcooperband/" title="Jared Cooperband" class="relative w-full h-72 bg-center bg-cover inline-block rounded-lg overflow-hidden mb-20" style="background-image: url('./images/workshop/grand.jpg')">
-        <div class="absolute block w-full h-full inset-x-0 bottom-0"></div>
-        </a>
-        <div class="block has-text-blue text-3xl lg:text-4xl font-black leading-none absolute bottom-0" style="font-size: 1.55rem!important;">
-            175.000
-            <span class="inline font-bold text-lg">/&nbsp;buổi</span>
-         </div>
-        </div>
-        <div class="col-span-full col-start-8 md:col-start-6 lg:col-span-19 border-0 lg:border-r border-solid border-gray-200 pr-5" style=" position: relative; padding-left:145px; border-right-width: 0px!important">
-        <div class="relative h-full pb-16">
-        <div class="sm:grid grid-cols-1">
-        <div class="col-span-2">
-        <a href="/mentor/jaredcooperband/" title="Jared Cooperband">
-        <h3 class="title text-2xl has-text-blue font-bold">
-            MỞ QUÁN CAFE : NHÀN HAY NHỌC ?    
-        
-        </h3>
-        </a>
-        </div>
-        <!-- <div style="padding-top:15px; padding-left:5px">   
-            <div class="w3-light-grey sm:text-right my-4 sm:my-0" style="height:35%">
-            <div class="w3-container w3-green w3-center " style="width:27%">27%</div>
-          </div>
-        </div> -->
-        <div class="sm:text-right my-4 sm:my-0">
-        </div>
-        </div>
-        <span class="font-bold" style="position:relative; top:20px;">Mô tả</span>
-        <hr/>
-        <div class="break-word mt-4 mb-6 max-w-screen-md text-sm leading-6" style="top:-15px;position:relative">
-            Bạn muốn có một quán cà phê theo phong cách của riêng mình nhưng đang băn khoăn làm thế nào để xoay xở khi kinh nghiệm khởi nghiệp chưa có? Trong buổi workshop tuần này có sự tham gia của các chuyên gia khởi nghiệp và nhà sáng lập của chuỗi cafe lớn nhất miền Trung hứa hẹn sẽ đem lại cho bạn không ít những kinh nghiệm quý giá. 
-            <div class="tags">
-      
-        </div>
-    </div>
-        <div class="md:grid grid-cols-2 mt-8 space-x-4 absolute bottom-0 w-full">
-        <div><a href="  /mentor/jaredcooperband/?preselect=standard" class="w-full text-center blue-btn">Đăng ký</a>
-        </div>
-        </div>
-        <div style="padding-top:15px; padding-left:5px">   
-            <div class="w3-light-grey sm:text-right my-4 sm:my-0 container-progress" style="height:35%">
-            <div class="w3-container w3-green w3-center skill " style="width:27%">27%</div>
-          </div>
-        </div>
-        </div>
-       
-
-        </div>
-        </div>
-    </div>
-        <div class="relative box px-7 py-8 transition-all duration-150 mb-12 max-w-screen-lg mx-auto" style="margin-bottom: 4rem;">
-        <div class="absolute top-0 -m-4 right-12 block border-2 border-solid border-gray-200 rounded-2xl bg-white has-text-blue font-bold px-2 py-1 text-sm">
-        TP Vinh
-        </div>
-        <div class="sm:grid grid-cols-24 sm:space-x-8">
-        <div class="col-span-7 md:col-span-5 relative" style="width:350px">
-        <a href="/mentor/marinakrutchinsky/" title="Marina Krutchinsky" class="relative w-full h-72 bg-center bg-cover inline-block rounded-lg overflow-hidden mb-20" style="background-image: url('./images/workshop/su-pham.jpg')">
-        <div class="absolute block w-full h-full inset-x-0 bottom-0""></div>
-        </a>
-        <div class="block has-text-blue text-3xl lg:text-4xl font-black leading-none absolute bottom-0" style="font-size: 1.55rem!important;">
-            125.000
-            <span class="inline font-bold text-lg">/&nbsp;buổi</span>
-         </div>
-        </div>
-        <div class="col-span-full col-start-8 md:col-start-6 lg:col-span-19 border-0 lg:border-r border-solid border-gray-200 pr-5" style=" position: relative;padding-left:145px; border-right-width: 0px!important">
-        <div class="relative h-full pb-16">
-        <div class="sm:grid grid-cols-1">
-        <div class="col-span-2">
-        <a href="/mentor/marinakrutchinsky/" title="Marina Krutchinsky">
-        <h3 class="title text-2xl has-text-blue font-bold">
-            CHUYỆN HỌC SƯ PHẠM: RA TRƯỜNG CÓ NHẤT THIẾT PHẢI LÀM NGHỀ GIÁO?
-        
-        </h3>
-        </a>
-        </div>
-        <!-- <div style="padding-top:15px; padding-left:5px">   
-            <div class="w3-light-grey sm:text-right my-4 sm:my-0" style="height:24%">
-            <div class="w3-container w3-green w3-center " style="width:80%">80%</div>
-          </div>
-        </div> -->
-        </div>
-        <span class="font-bold" style="position:relative; top:20px;">Mô tả</span>
-        <hr/>
-        <div class="break-word mt-4 mb-6 max-w-screen-md text-sm leading-6" style="top:-15px;position:relative">
-            Workshop cho bạn những hình dung cụ thể nhất về các ngành trong trường sư phạm. Liệu bạn có thể đa dạng sự lựa chọn nghề nghiệp của mình hay không? Với sự tư vấn của các thầy cô trong ngành, các bạn sẽ không còn mơ hồ và kiên định hơn trong các quyết định học và làm của mình.
-        </div>
-        <div class="tags">
-     
-        </div>
-        <div class="md:grid grid-cols-2 mt-8 space-x-4 absolute bottom-0 w-full">
-        <div><a href="
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                                    /mentor/marinakrutchinsky/?preselect=lite" class="w-full text-center blue-btn">Đăng ký</a>
-        </div>
-        </div>
-        <div style="padding-top:15px">   
-            <div class="w3-light-grey sm:text-right my-4 sm:my-0 container-progress" style="height:24%">
-            <div class="w3-container w3-green w3-center skill " style="width:80%">80%</div>
-          </div>
-        </div>
-        </div>
-        </div>
-      
-        </div>
-        </div>
         <div class="relative box px-7 py-8 transition-all duration-150 mb-12 max-w-screen-lg mx-auto" style="margin-bottom: 4rem;">
         <div class="absolute top-0 -m-4 right-12 block border-2 border-solid border-gray-200 rounded-2xl bg-white has-text-blue font-bold px-2 py-1 text-sm">
         TP Hồ Chí Minh
         </div>
         <div class="sm:grid grid-cols-24 sm:space-x-8">
-        <div class="col-span-7 md:col-span-5 relative" style="width:350px">
-        <a href="/mentor/DominicMonn/" title="Dominic Monn" class="relative w-full h-72 bg-center bg-cover inline-block rounded-lg overflow-hidden mb-20" style="background-image: url('./images/workshop/giao-dien.jpg')">
-        <div class="absolute block w-full h-full inset-x-0 bottom-0" ></div>
+        <div class="col-span-7 md:col-span-5 relative">
+        <a href="/mentor/marinakrutchinsky/" title="Marina Krutchinsky" class="relative w-full h-72 bg-center bg-cover inline-block rounded-lg overflow-hidden mb-20" style="background-image: url('./images/avatar/lacosmetic.jpg')">
+        <div class="absolute block w-full h-full inset-x-0 bottom-0" style="background-image: linear-gradient(to top,rgba(48,65,96,1.0), rgba(48,65,96,0.0) 60%,  rgba(48,65,96,0.0));"></div>
         </a>
-        <div class="block has-text-blue text-3xl lg:text-4xl font-black leading-none absolute bottom-0" style="font-size: 1.55rem!important;">
-            300.000
-            <span class="inline font-bold text-lg">/&nbsp;buổi</span>
-         </div>
+        
         </div>
-        <div class="col-span-full col-start-8 md:col-start-6 lg:col-span-19 border-0 lg:border-r border-solid border-gray-200 pr-5" style=" position: relative; padding-left:145px; border-right-width: 0px!important">
+        <div class="col-span-full col-start-8 md:col-start-6 lg:col-span-13 border-0 lg:border-r border-solid border-gray-200 pr-5" style=" position: relative">
         <div class="relative h-full pb-16">
-        <div class="sm:grid grid-cols-1">
+        <div class="sm:grid grid-cols-3">
         <div class="col-span-2">
-        <a href="/mentor/DominicMonn/" title="Dominic Monn">
+        <a href="/mentor/marinakrutchinsky/" title="Marina Krutchinsky">
         <h3 class="title text-2xl has-text-blue font-bold">
-            THEO CHÂN MỘT NGÀY CỦA NGƯỜI THIẾT KẾ GIAO DIỆN APP  
+            MAI THANH QUỲNH
         
         </h3>
         </a>
         </div>
-        <!-- <div style="padding-top:15px; padding-left:5px">   
-            <div class="w3-light-grey sm:text-right my-4 sm:my-0" style="height:35%">
-            <div class="w3-container w3-green w3-center " style="width:74%">74%</div>
-          </div>
-        </div> -->
+        <div class="sm:text-right my-4 sm:my-0">
+        <a href="/top/" target="_blank" class="whitespace-nowrap py-2 px-4 rounded-full text-sm cursor-pointer font-bold bg-mc-green text-white hover:text-white"><i class="fa fa-star"></i>&nbsp;6 năm</a>
         </div>
-        <span class="font-bold" style="position:relative; top:20px;">Mô tả</span>
+        </div>
+        <span class="has-text-blue text-base mt-2 inline-block">Senior Marketing manager  <span class="font-bold">tại La cosmetique</span></span><br>
+        <div class="mt-2">
+        <div class="star-rating-display" data-rating="5.0"><span class="is-vishidden">5.0 stars</span>
+        </div>
+        <span class="rating-display"><b class="has-text-blue">5.0</b>&nbsp;<span class="has-text-blue">(10 reviews)</span></span>
+        </div>
         <hr/>
         <div class="break-word mt-4 mb-6 max-w-screen-md text-sm leading-6" style="top:-15px;position:relative">
-            Bạn có thắc mắc khối lượng công việc trong một ngày của một frontend developer? Tôi sẽ phải gặp những ai để hoàn thành công việc? Bạn có muốn trải nghiệm cùng với tôi để xử lý các tác vụ đó? Tôi sẽ rất hoan nghênh chào đón bạn ;)
-        </div>
+            Nếu đủ đam mê và nhiệt huyết với ngành Marketing, bạn sẽ nhận được kết quả xứng đáng với công sức và trí tuệ mà bạn bỏ ra. Mọi thứ không đơn giản chỉ vì tiền mà còn là sự phát triển bản thân của một Marketer.
+            Bạn phải tiếp tục học hỏi và cập nhật mọi thứ liên quan đến thị trường. Tôi sẽ rất hoan nghênh nếu bạn sẵn sàng lắng nghe.
+            </div>
         <div class="tags">
-     
+        <a href="?tagsearch=UX%20%26%20Design" class="tag-sm mb-2 mr-2 font-semibold">Marketing</a>
+        <a href="/filter/uxdesign/" class="tag-sm mb-2 mr-2 font-semibold">Quản lý</a>
+        <a href="/filter/productdesign/" class="tag-sm mb-2 mr-2 font-semibold">Mỹ phẩm</a>
+        <a href="/filter/uxcareergrowth/" class="tag-sm mb-2 mr-2 font-semibold">Thương hiệu nước ngoài</a>
         </div>
         <div class="md:grid grid-cols-2 mt-8 space-x-4 absolute bottom-0 w-full">
         <div><a href="
@@ -705,19 +457,37 @@ Look for sessions
         
         
         
-                                    /mentor/DominicMonn/?preselect=lite" class="w-full text-center blue-btn">Đăng ký</a>
+                                    /mentor/marinakrutchinsky/?preselect=lite" class="w-full text-center blue-btn">Xem Profile</a>
         </div>
         </div>
-        <div style="padding-top:15px;">   
-            <div class="w3-light-grey sm:text-right my-4 sm:my-0 container-progress" style="height:35%">
-            <div class="w3-container w3-green w3-center skill " style="width:74%">74%</div>
-          </div>
+        </div>
+        </div>
+        <div class="hidden lg:block lg:col-span-6">
+        
+        <div class="font-semibold has-text-blue text-sm">Bạn sẽ nhận được gì?
+        </div>
+        <div class="my-5 text-gray-600 text-sm w-full divide-y divide-x-0 divide-gray-200 divide-solid border-solid border-0 border-t border-b border-gray-200">
+        <div class="w-full py-3">
+        
+        Tâm sự trong ngành Marketing
+        </div>
+        <div class="w-full py-3">
+        
+        Làm sao để một Marketer có thể “giữ lửa”
+        </div>
+        
+        <div class="w-full py-3">
+        
+        Cần chuẩn bị gì để bước chân vào ngành
+        </div>
+        </div>
+        <a href="/mentor/marinakrutchinsky/" class="w-full block text-right uppercase has-text-blue font-semibold text-xs">
+        Xem thêm...
+        </a>
         </div>
         </div>
         </div>
        
-        </div>
-        </div>
         
         <nav class="border-t border-gray-200 px-4 flex items-center justify-between sm:px-0 mt-8 max-w-screen-lg mx-auto">
         <div class="-mt-px w-0 flex-1 flex">
@@ -740,8 +510,27 @@ Look for sessions
         </div>
         </main>
         
-      
-    
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+        </script>
         <!-- Demo ads. Please ignore and remove. -->
         <!-- <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
         <script src="https://cdn.tutorialzine.com/misc/enhance/v2.js" async></script>

@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html class="" lang="en">
 <head>
@@ -13,14 +11,7 @@
 <meta name="robots" content="index, follow">
 	<link rel="icon" href="images/logo-official.png" type="image/x-icon">
 
-<!-- <link rel="mask-icon" href="https://cdn.mentorcruise.com/img/favicons/safari-pinned-tab.svg" color="#5bbad5"> -->
-<!-- <meta name="theme-color" content="#ffffff">
-<meta name="p:domain_verify" content="083c064bdfdef31e92e162517e3c52fd" />
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@mentorcruise">
-<meta name="twitter:title" content="Find a Mentor - MentorCruise">
-<meta prefix="og: http://ogp.me/ns#" name="og:description" content="MentorCruise connects aspiring tech workers with industry professionals for long-term mentorship in Software Engineering, Product, Design and Business.">
-<meta prefix="og: http://ogp.me/ns#" name="og:image" content="https://cdn.mentorcruise.com/img/twittercards/mentorbrowse.jpg"> -->
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 <link href="css/bootstrap.css" rel="stylesheet">
@@ -40,6 +31,47 @@
 .blue-btn {
     background-color: #ba33c6;
     }
+
+    /* dropdown button */
+   
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content { 
+  font-size:14px;  
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+/*  */
     </style>
 <body class="">
 
@@ -197,7 +229,7 @@
 <div @click="order = !order" @click.away="order = false">
 <button type="button" class="inline w-auto md:w-full mb-4 md:mb-0 bg-white border-0 cursor-pointer transition-all duration-100 relative bg-gray-100 hover:bg-gray-200 rounded-full has-text-blue pl-6 pr-14 py-3 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
 <span class="truncate">
-Bộ lọc tìm kiếm
+Số năm kinh nghiệm
 </span>
 <span class="absolute inset-y-0 right-0 flex items-center pr-3 pt-1 pointer-events-none">
 
@@ -223,7 +255,6 @@ Lĩnh vực
 <svg class="w-4 h-4 text-mc-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
 </span>
 </button>
-
 <input type="hidden" name="tagsearch" value="" id="category">
 </div>
 </div>
@@ -242,23 +273,29 @@ Kỹ năng
 </button>
 </div>
 </div>
-<div class="relative" x-data="{ services: false, selections: [] }">
-<div @click.away="services = false">
-<button type="button" @click="services = !services" class="bg-white border border-solid border-gray-300 cursor-pointer transition-all duration-100 relative w-full hover:bg-gray-100 rounded-full has-text-blue pl-5 pr-10 py-3 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" aria-haspopup="listbox" aria-expanded="true" x-bind:class="selections.length === 0 ? '' : 'border-gray-600'">
-<span class="truncate" x-show="selections.length === 0">
-Địa điểm
-</span>
-<span class="truncate" x-show="selections.length !== 0" style="display: none">
-<span x-text="selections.length"></span> service<span class="truncate" x-show="selections.length !== 1" style="display: none">s</span>
-</span>
-<span class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+<div class="dropdown">
+    <button type="button"  onclick="myFunction()"  class="bg-white border border-solid border-gray-300 cursor-pointer transition-all duration-100 relative w-full hover:bg-gray-100 rounded-full has-text-blue pl-5 pr-10 py-3 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm dropbtn" aria-haspopup="listbox" aria-expanded="true" x-bind:class="selections.length === 0 ? '' : 'border-gray-600'">
+        <span class="truncate" x-show="selections.length === 0">
+        Địa điểm
+        </span>
+        <span class="truncate" x-show="selections.length !== 0" style="display: none">
+        <span x-text="selections.length"></span> service<span class="truncate" x-show="selections.length !== 1" style="display: none">s</span>
+        </span>
+        <span class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+         <svg class="w-4 h-4 text-mc-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </span>
+        </button>
+        <!--  -->
+    <!-- <button type="button" onclick="myFunction()" class="dropbtn">Dropdown</button> -->
+    <div id="myDropdown" class="dropdown-content">
+      <a href="mentor_hcm.html">TP Hồ Chí Minh</a>
+      <a href="mentor_danang.html">Đà Nẵng</a>
+      <a href="mentor_haiphong.html">Hải Phòng</a>
+      <a href="mentor_hanoi.html">Hà Nội</a>
+    </div>
+  </div>
+<!--  -->
 
- <svg class="w-4 h-4 text-mc-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-</span>
-</button>
-
-</div>
-</div>
 <div id="price_select" x-data="{ price: false }">
 <div class="relative">
 <div @click.away="price = false">
@@ -801,7 +838,27 @@ Look for sessions
         </div>
         </main>
         
-    
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+        </script>
         <!-- Demo ads. Please ignore and remove. -->
         <!-- <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
         <script src="https://cdn.tutorialzine.com/misc/enhance/v2.js" async></script>
