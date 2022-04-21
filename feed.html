@@ -419,16 +419,15 @@
 							<div class="p-2" style="bottom:20px; position:relative;">
 								<div class="row" style="text-align:center; font-size:16px;">
 									<div class="col-sm" style="display:flex;">
-										<button>
-											<!-- <div>
+										<button id="feed1" onclick="funcLike(this)">
+											<div id="like_feed1">
 												<img class="user-action" src="./images/user-like.png">
 												Like
-											</div> -->
-											<div  style="color:#347ec1">
+											</div>
+											<div  style="color:#347ec1; display:none" id="blue_feed1">
 												<img class="user-action" src="./images/like-blue.png">
 												Like
-											</div>
-											
+											</div> 
 										</button>
 									</div>
 									<div class="col-sm" style="display:flex;">
@@ -490,10 +489,15 @@
 							<div class="p-2" style="bottom:20px; position:relative;">
 								<div class="row" style="text-align:center; font-size:16px;">
 									<div class="col-sm" style="display:flex;">
-										
-										<button>
-											<img class="user-action" src="./images/user-like.png">
-											Like
+										<button id="feed2" onclick="funcLike(this)">
+											<div id="like_feed2">
+												<img class="user-action" src="./images/user-like.png">
+												Like
+											</div>
+											<div  style="color:#347ec1; display:none" id="blue_feed2">
+												<img class="user-action" src="./images/like-blue.png">
+												Like
+											</div> 
 										</button>
 									</div>
 									<div class="col-sm" style="display:flex;">
@@ -557,10 +561,15 @@
 								<div class="p-2" style="bottom:20px; position:relative;">
 									<div class="row" style="text-align:center; font-size:16px;">
 										<div class="col-sm" style="display:flex;">
-											
-											<button>
-												<img class="user-action" src="./images/user-like.png">
-												Like
+											<button id="feed3" onclick="funcLike(this)">
+												<div id="like_feed3">
+													<img class="user-action" src="./images/user-like.png">
+													Like
+												</div>
+												<div  style="color:#347ec1; display:none" id="blue_feed3">
+													<img class="user-action" src="./images/like-blue.png">
+													Like
+												</div> 
 											</button>
 										</div>
 										<div class="col-sm" style="display:flex;">
@@ -606,10 +615,16 @@
 										<div class="row" style="text-align:center; font-size:16px;">
 											<div class="col-sm" style="display:flex;">
 												
-												<button>
+											<button id="feed4" onclick="funcLike(this)">
+												<div id="like_feed4">
 													<img class="user-action" src="./images/user-like.png">
 													Like
-												</button>
+												</div>
+												<div  style="color:#347ec1; display:none" id="blue_feed4">
+													<img class="user-action" src="./images/like-blue.png">
+													Like
+												</div> 
+											</button>
 											</div>
 											<div class="col-sm" style="display:flex;">
 												
@@ -677,9 +692,15 @@
 									<div class="row" style="text-align:center; font-size:16px;">
 										<div class="col-sm" style="display:flex;">
 											
-											<button>
-												<img class="user-action" src="./images/user-like.png">
-												Like
+											<button id="feed5" onclick="funcLike(this)">
+												<div id="like_feed5">
+													<img class="user-action" src="./images/user-like.png">
+													Like
+												</div>
+												<div  style="color:#347ec1; display:none" id="blue_feed5">
+													<img class="user-action" src="./images/like-blue.png">
+													Like
+												</div> 
 											</button>
 										</div>
 										<div class="col-sm" style="display:flex;">
@@ -718,11 +739,6 @@
 	<div class="coverImage"></div>
 	<!-- <div class="search"></div> -->
 	<div class="bodyPlayer"></div>
-  
-
-				  
-			
-				  
 				  <div class="bar"></div>
 				  
 				  <div class="info" style="text-align:center">
@@ -751,12 +767,7 @@
 				  </table>
 				  
 				  <div class="current"><h2>STRESSED OUT</h2></div>
-				  
-			  
 		  </article>
-
-
-
 		  
 		<div style="padding-top:658px;">
 			<div class=" p-2 row" style="height:30px;">
@@ -774,9 +785,15 @@
 			<div class="row" style="text-align:center; font-size:16px;">
 				<div class="col-sm" style="display:flex;">
 					
-					<button>
-						<img class="user-action" src="./images/user-like.png">
-						Like
+					<button id="feed6" onclick="funcLike(this)">
+						<div id="like_feed6">
+							<img class="user-action" src="./images/user-like.png">
+							Like
+						</div>
+						<div  style="color:#347ec1; display:none" id="blue_feed6">
+							<img class="user-action" src="./images/like-blue.png">
+							Like
+						</div> 
 					</button>
 				</div>
 				<div class="col-sm" style="display:flex;">
@@ -798,14 +815,8 @@
 
 		</div>
 		</div>
-		
-	
 					</div>
-	
-						
-
 					</div>
-
 
 					<div class="col-md-4 sponsor" id="sidebar">
 							<p>Sponsored by</p>
@@ -821,10 +832,8 @@
 						
 					</div>
 				  </div>
-				
 			</div>
 		</section>
-	
 
 
 
@@ -837,6 +846,24 @@
 	<!--Scroll to top-->
 	<!-- <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-up"></span></div> -->
 
+	<!-- press button like -->
+	<script>
+		function funcLike(btn) {
+		  var id_button =  btn.id;
+		  //console.log(id_button);
+		  var tmp1 = "like" + '_' + id_button;
+		  var tmp2 = "blue"  +  '_' + id_button;
+		  var x = document.getElementById(tmp1);
+		  var y = document.getElementById(tmp2);
+		  if (x.style.display === "none" && y.style.display === "block") {
+			x.style.display = "block";
+			y.style.display = "none";
+		  } else {
+			x.style.display = "none";
+			y.style.display = "block";
+		  }
+		}
+		</script>
 
 	<script type="text/javascript">
 		var audio = document.getElementById('audio');
