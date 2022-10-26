@@ -1,3 +1,3 @@
 # mentore
-Start up Run Way Competition in Danang, Vietnam
+More details:
 shorturl.at/quwP
